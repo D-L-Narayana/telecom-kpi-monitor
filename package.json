@@ -1,18 +1,22 @@
 {
   "name": "telecom-kpi-monitor",
   "private": true,
-  "version": "0.1.0",
-  "description": "4G LTE / 5G NR network KPI and alarm monitoring dashboard (NOC-style) - scaffold",
+  "version": "1.0.0",
+  "description": "4G LTE / 5G NR network KPI and alarm monitoring dashboard (NOC-style) on a synthetic dataset",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "gen:data": "node scripts/generate-synthetic-data.mjs"
+    "test": "vitest run",
+    "gen:data": "tsx scripts/generate-synthetic-data.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "recharts": "^3.10.1",
+    "tsx": "^4.23.15",
+    "vitest": "^4.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",

@@ -1,0 +1,86 @@
+[
+  {
+    "siteId": "VSKP-001",
+    "name": "Gajuwaka",
+    "lat": 17.630066464943813,
+    "lon": 83.1062279143068,
+    "region": "VSKP-North"
+  },
+  {
+    "siteId": "VSKP-002",
+    "name": "MVP Colony",
+    "lat": 17.74068469187245,
+    "lon": 83.29145537459291,
+    "region": "VSKP-Central"
+  },
+  {
+    "siteId": "VSKP-003",
+    "name": "Dwaraka Nagar",
+    "lat": 17.798794281608426,
+    "lon": 83.32243860358605,
+    "region": "VSKP-South"
+  },
+  {
+    "siteId": "VSKP-004",
+    "name": "Madhurawada",
+    "lat": 17.780970690653195,
+    "lon": 83.15025189323816,
+    "region": "VSKP-North"
+  },
+  {
+    "siteId": "VSKP-005",
+    "name": "Seethammadhara",
+    "lat": 17.66888907219749,
+    "lon": 83.23253540691687,
+    "region": "VSKP-Central"
+  },
+  {
+    "siteId": "VSKP-006",
+    "name": "Rushikonda",
+    "lat": 17.72994948003674,
+    "lon": 83.34266299955081,
+    "region": "VSKP-South"
+  },
+  {
+    "siteId": "VSKP-007",
+    "name": "Pendurthi",
+    "lat": 17.68038433644455,
+    "lon": 83.16143062736839,
+    "region": "VSKP-North"
+  },
+  {
+    "siteId": "VSKP-008",
+    "name": "Anakapalle",
+    "lat": 17.755364348236473,
+    "lon": 83.31157192218117,
+    "region": "VSKP-Central"
+  },
+  {
+    "siteId": "VSKP-009",
+    "name": "Bheemunipatnam",
+    "lat": 17.711853122860195,
+    "lon": 83.32927477892255,
+    "region": "VSKP-South"
+  },
+  {
+    "siteId": "VSKP-010",
+    "name": "Kancharapalem",
+    "lat": 17.76739763503196,
+    "lon": 83.2765987736336,
+    "region": "VSKP-North"
+  },
+  {
+    "siteId": "VSKP-011",
+    "name": "Akkayyapalem",
+    "lat": 17.683704542401248,
+    "lon": 83.29298521022312,
+    "region": "VSKP-Central"
+  },
+  {
+    "siteId": "VSKP-012",
+    "name": "Yendada",
+    "lat": 17.62904147174908,
+    "lon": 83.20672932939371,
+    "region": "VSKP-South"
+  }
+]

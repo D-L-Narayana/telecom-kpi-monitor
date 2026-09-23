@@ -1,0 +1,231 @@
+{
+  "protocolHierarchy": [
+    {
+      "protocol": "GTP-U (user plane, S1-U / N3)",
+      "packets": 812400,
+      "bytes": 633672000
+    },
+    {
+      "protocol": "TCP",
+      "parent": "GTP-U",
+      "packets": 540200,
+      "bytes": 480778000,
+      "retransmissions": 4322
+    },
+    {
+      "protocol": "UDP",
+      "parent": "GTP-U",
+      "packets": 261300,
+      "bytes": 109746000
+    },
+    {
+      "protocol": "RTP (VoLTE media)",
+      "parent": "UDP",
+      "packets": 148600,
+      "bytes": 31800400
+    },
+    {
+      "protocol": "DNS",
+      "parent": "UDP",
+      "packets": 21400,
+      "bytes": 2054400
+    },
+    {
+      "protocol": "SIP (IMS signalling)",
+      "parent": "GTP-U",
+      "packets": 9800,
+      "bytes": 6272000
+    },
+    {
+      "protocol": "SCTP (control plane)",
+      "packets": 96300,
+      "bytes": 20415600
+    },
+    {
+      "protocol": "S1AP (LTE)",
+      "parent": "SCTP",
+      "packets": 61200,
+      "bytes": 11505600
+    },
+    {
+      "protocol": "NGAP (5G)",
+      "parent": "SCTP",
+      "packets": 35100,
+      "bytes": 7090200
+    },
+    {
+      "protocol": "ICMP",
+      "packets": 3900,
+      "bytes": 327600
+    }
+  ],
+  "topConversations": [
+    {
+      "addressA": "10.42.85.16",
+      "addressB": "172.16.4.187",
+      "protocol": "TCP",
+      "packets": 61815,
+      "bytes": 53669252,
+      "durationS": 797.55
+    },
+    {
+      "addressA": "10.41.249.182",
+      "addressB": "172.16.4.55",
+      "protocol": "TCP",
+      "packets": 51514,
+      "bytes": 46286278,
+      "durationS": 929.85
+    },
+    {
+      "addressA": "10.40.214.103",
+      "addressB": "172.16.6.29",
+      "protocol": "UDP",
+      "packets": 40852,
+      "bytes": 41623553,
+      "durationS": 34.53
+    },
+    {
+      "addressA": "10.43.159.218",
+      "addressB": "172.16.5.243",
+      "protocol": "UDP",
+      "packets": 59156,
+      "bytes": 41617408,
+      "durationS": 1167.75
+    },
+    {
+      "addressA": "10.41.112.23",
+      "addressB": "172.16.7.129",
+      "protocol": "TCP",
+      "packets": 43580,
+      "bytes": 30405288,
+      "durationS": 931.63
+    },
+    {
+      "addressA": "10.41.34.248",
+      "addressB": "172.16.0.49",
+      "protocol": "TCP",
+      "packets": 34893,
+      "bytes": 28257355,
+      "durationS": 1629.84
+    },
+    {
+      "addressA": "10.41.140.92",
+      "addressB": "172.16.3.63",
+      "protocol": "TCP",
+      "packets": 46792,
+      "bytes": 27135826,
+      "durationS": 1706.89
+    },
+    {
+      "addressA": "10.43.118.1",
+      "addressB": "172.16.7.65",
+      "protocol": "TCP",
+      "packets": 37233,
+      "bytes": 23210155,
+      "durationS": 1256.65
+    },
+    {
+      "addressA": "10.42.196.120",
+      "addressB": "172.16.1.85",
+      "protocol": "TCP",
+      "packets": 30170,
+      "bytes": 19779236,
+      "durationS": 1534.7
+    },
+    {
+      "addressA": "10.41.52.50",
+      "addressB": "172.16.6.100",
+      "protocol": "RTP",
+      "packets": 27832,
+      "bytes": 19774281,
+      "durationS": 1515.32
+    },
+    {
+      "addressA": "10.41.77.114",
+      "addressB": "172.16.1.35",
+      "protocol": "UDP",
+      "packets": 25521,
+      "bytes": 18053182,
+      "durationS": 867.93
+    },
+    {
+      "addressA": "10.41.32.159",
+      "addressB": "172.16.2.153",
+      "protocol": "TCP",
+      "packets": 40227,
+      "bytes": 13038209,
+      "durationS": 1031.41
+    },
+    {
+      "addressA": "10.40.1.139",
+      "addressB": "172.16.2.173",
+      "protocol": "RTP",
+      "packets": 16202,
+      "bytes": 12553308,
+      "durationS": 603.97
+    },
+    {
+      "addressA": "10.40.167.48",
+      "addressB": "172.16.5.161",
+      "protocol": "TCP",
+      "packets": 36340,
+      "bytes": 11660297,
+      "durationS": 952.72
+    },
+    {
+      "addressA": "10.42.197.13",
+      "addressB": "172.16.3.195",
+      "protocol": "UDP",
+      "packets": 7030,
+      "bytes": 8397932,
+      "durationS": 510.95
+    },
+    {
+      "addressA": "10.40.237.142",
+      "addressB": "172.16.2.63",
+      "protocol": "TCP",
+      "packets": 14120,
+      "bytes": 6889703,
+      "durationS": 1226.35
+    },
+    {
+      "addressA": "10.41.133.127",
+      "addressB": "172.16.2.164",
+      "protocol": "TCP",
+      "packets": 5389,
+      "bytes": 5877507,
+      "durationS": 33
+    },
+    {
+      "addressA": "10.43.90.74",
+      "addressB": "172.16.6.74",
+      "protocol": "RTP",
+      "packets": 9746,
+      "bytes": 5610221,
+      "durationS": 462.46
+    },
+    {
+      "addressA": "10.41.95.186",
+      "addressB": "172.16.3.187",
+      "protocol": "TCP",
+      "packets": 17286,
+      "bytes": 5445109,
+      "durationS": 48.54
+    },
+    {
+      "addressA": "10.41.58.127",
+      "addressB": "172.16.0.147",
+      "protocol": "UDP",
+      "packets": 5128,
+      "bytes": 2513498,
+      "durationS": 1071.75
+    }
+  ],
+  "tcpSummary": {
+    "packets": 540200,
+    "retransmissions": 4322,
+    "retransmissionPct": 0.8,
+    "rttAvgMs": 38.4,
+    "rttP95Ms": 92.1
+  }
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "cellId": "VSKP-001-L1",
+    "siteId": "VSKP-001",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-001-L2",
+    "siteId": "VSKP-001",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-001-L3",
+    "siteId": "VSKP-001",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-001-N1",
+    "siteId": "VSKP-001",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-002-L1",
+    "siteId": "VSKP-002",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-002-L2",
+    "siteId": "VSKP-002",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-002-L3",
+    "siteId": "VSKP-002",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-002-N1",
+    "siteId": "VSKP-002",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-003-L1",
+    "siteId": "VSKP-003",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-003-L2",
+    "siteId": "VSKP-003",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-003-L3",
+    "siteId": "VSKP-003",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-003-N1",
+    "siteId": "VSKP-003",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-004-L1",
+    "siteId": "VSKP-004",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-004-L2",
+    "siteId": "VSKP-004",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-004-L3",
+    "siteId": "VSKP-004",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-004-N1",
+    "siteId": "VSKP-004",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-005-L1",
+    "siteId": "VSKP-005",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-005-L2",
+    "siteId": "VSKP-005",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-005-L3",
+    "siteId": "VSKP-005",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-005-N1",
+    "siteId": "VSKP-005",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-006-L1",
+    "siteId": "VSKP-006",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-006-L2",
+    "siteId": "VSKP-006",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-006-L3",
+    "siteId": "VSKP-006",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-006-N1",
+    "siteId": "VSKP-006",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-007-L1",
+    "siteId": "VSKP-007",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-007-L2",
+    "siteId": "VSKP-007",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-007-L3",
+    "siteId": "VSKP-007",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-007-N1",
+    "siteId": "VSKP-007",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-008-L1",
+    "siteId": "VSKP-008",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-008-L2",
+    "siteId": "VSKP-008",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-008-L3",
+    "siteId": "VSKP-008",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-008-N1",
+    "siteId": "VSKP-008",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-009-L1",
+    "siteId": "VSKP-009",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-009-L2",
+    "siteId": "VSKP-009",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-009-L3",
+    "siteId": "VSKP-009",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-009-N1",
+    "siteId": "VSKP-009",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-010-L1",
+    "siteId": "VSKP-010",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-010-L2",
+    "siteId": "VSKP-010",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-010-L3",
+    "siteId": "VSKP-010",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-010-N1",
+    "siteId": "VSKP-010",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-011-L1",
+    "siteId": "VSKP-011",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-011-L2",
+    "siteId": "VSKP-011",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-011-L3",
+    "siteId": "VSKP-011",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-011-N1",
+    "siteId": "VSKP-011",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-012-L1",
+    "siteId": "VSKP-012",
+    "technology": "LTE",
+    "band": "B3",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 0
+  },
+  {
+    "cellId": "VSKP-012-L2",
+    "siteId": "VSKP-012",
+    "technology": "LTE",
+    "band": "B40",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 120
+  },
+  {
+    "cellId": "VSKP-012-L3",
+    "siteId": "VSKP-012",
+    "technology": "LTE",
+    "band": "B1",
+    "bandwidthMHz": 20,
+    "azimuthDeg": 240
+  },
+  {
+    "cellId": "VSKP-012-N1",
+    "siteId": "VSKP-012",
+    "technology": "NR",
+    "band": "n78",
+    "bandwidthMHz": 100,
+    "azimuthDeg": 0
+  }
+]

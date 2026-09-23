@@ -1,0 +1,2784 @@
+[
+  {
+    "alarmId": "ALM-000170",
+    "timestamp": "2026-09-23T08:51:55.263Z",
+    "siteId": "VSKP-006",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000020",
+    "timestamp": "2026-09-23T08:08:00.328Z",
+    "siteId": "VSKP-010",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000254",
+    "timestamp": "2026-09-23T06:21:02.427Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T07:59:48.070Z"
+  },
+  {
+    "alarmId": "ALM-000284",
+    "timestamp": "2026-09-23T04:34:18.254Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T08:16:15.068Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000103",
+    "timestamp": "2026-09-23T03:39:12.726Z",
+    "siteId": "VSKP-002",
+    "cellId": "VSKP-002-L1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000120",
+    "timestamp": "2026-09-23T03:30:16.432Z",
+    "siteId": "VSKP-011",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000252",
+    "timestamp": "2026-09-23T03:04:32.957Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T08:35:10.428Z"
+  },
+  {
+    "alarmId": "ALM-000131",
+    "timestamp": "2026-09-23T02:54:41.930Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T07:00:58.082Z"
+  },
+  {
+    "alarmId": "ALM-000209",
+    "timestamp": "2026-09-23T02:44:36.873Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000064",
+    "timestamp": "2026-09-23T02:12:17.128Z",
+    "siteId": "VSKP-008",
+    "cellId": "VSKP-008-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T04:22:18.738Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000268",
+    "timestamp": "2026-09-23T02:06:21.295Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T09:00:00.000Z"
+  },
+  {
+    "alarmId": "ALM-000181",
+    "timestamp": "2026-09-23T01:49:32.715Z",
+    "siteId": "VSKP-004",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T09:00:00.000Z"
+  },
+  {
+    "alarmId": "ALM-000208",
+    "timestamp": "2026-09-23T00:04:48.891Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000281",
+    "timestamp": "2026-09-22T23:34:05.534Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T07:18:02.958Z"
+  },
+  {
+    "alarmId": "ALM-000036",
+    "timestamp": "2026-09-22T23:28:32.660Z",
+    "siteId": "VSKP-001",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000101",
+    "timestamp": "2026-09-22T23:13:43.413Z",
+    "siteId": "VSKP-002",
+    "cellId": "VSKP-002-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T02:21:04.100Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000040",
+    "timestamp": "2026-09-22T22:34:08.412Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T02:42:01.009Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000219",
+    "timestamp": "2026-09-22T21:46:06.280Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T05:23:47.963Z"
+  },
+  {
+    "alarmId": "ALM-000173",
+    "timestamp": "2026-09-22T21:33:35.520Z",
+    "siteId": "VSKP-001",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000056",
+    "timestamp": "2026-09-22T20:27:02.828Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T00:28:56.620Z"
+  },
+  {
+    "alarmId": "ALM-000100",
+    "timestamp": "2026-09-22T20:06:05.088Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000155",
+    "timestamp": "2026-09-22T19:19:48.112Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T21:10:57.891Z"
+  },
+  {
+    "alarmId": "ALM-000090",
+    "timestamp": "2026-09-22T19:00:20.202Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000119",
+    "timestamp": "2026-09-22T18:36:59.745Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T02:35:57.444Z"
+  },
+  {
+    "alarmId": "ALM-000087",
+    "timestamp": "2026-09-22T18:35:46.062Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000200",
+    "timestamp": "2026-09-22T17:51:36.997Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T00:32:23.735Z"
+  },
+  {
+    "alarmId": "ALM-000123",
+    "timestamp": "2026-09-22T17:09:44.955Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "acknowledged",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000063",
+    "timestamp": "2026-09-22T16:53:26.409Z",
+    "siteId": "VSKP-007",
+    "cellId": "VSKP-007-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000264",
+    "timestamp": "2026-09-22T16:24:20.863Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L2",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-23T02:17:39.402Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000047",
+    "timestamp": "2026-09-22T16:13:25.314Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T18:17:44.550Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000258",
+    "timestamp": "2026-09-22T15:05:09.974Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T19:20:25.959Z"
+  },
+  {
+    "alarmId": "ALM-000037",
+    "timestamp": "2026-09-22T15:00:33.597Z",
+    "siteId": "VSKP-005",
+    "cellId": "VSKP-005-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T16:03:25.757Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000188",
+    "timestamp": "2026-09-22T14:43:04.561Z",
+    "siteId": "VSKP-008",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000184",
+    "timestamp": "2026-09-22T13:44:47.922Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L3",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T20:09:55.979Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000102",
+    "timestamp": "2026-09-22T13:02:13.703Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T21:48:12.821Z"
+  },
+  {
+    "alarmId": "ALM-000018",
+    "timestamp": "2026-09-22T12:28:49.793Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000115",
+    "timestamp": "2026-09-22T10:43:05.139Z",
+    "siteId": "VSKP-005",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T15:06:50.537Z"
+  },
+  {
+    "alarmId": "ALM-000081",
+    "timestamp": "2026-09-22T10:04:59.886Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T14:33:59.991Z"
+  },
+  {
+    "alarmId": "ALM-000232",
+    "timestamp": "2026-09-22T09:45:27.663Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000014",
+    "timestamp": "2026-09-22T09:31:45.307Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T12:41:30.010Z"
+  },
+  {
+    "alarmId": "ALM-000139",
+    "timestamp": "2026-09-22T08:52:39.219Z",
+    "siteId": "VSKP-006",
+    "cellId": "VSKP-006-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "acknowledged",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000030",
+    "timestamp": "2026-09-22T08:33:29.211Z",
+    "siteId": "VSKP-002",
+    "cellId": "VSKP-002-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T17:02:52.873Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000241",
+    "timestamp": "2026-09-22T06:38:09.834Z",
+    "siteId": "VSKP-012",
+    "cellId": "VSKP-012-L1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T08:13:19.362Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000052",
+    "timestamp": "2026-09-22T05:57:26.007Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T08:24:06.327Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000243",
+    "timestamp": "2026-09-22T05:46:37.928Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T15:34:15.947Z"
+  },
+  {
+    "alarmId": "ALM-000253",
+    "timestamp": "2026-09-22T04:52:13.812Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000029",
+    "timestamp": "2026-09-22T04:43:36.445Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000142",
+    "timestamp": "2026-09-22T03:54:13.232Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T10:27:42.355Z"
+  },
+  {
+    "alarmId": "ALM-000107",
+    "timestamp": "2026-09-22T03:39:30.666Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000274",
+    "timestamp": "2026-09-22T03:27:39.178Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T09:12:58.735Z"
+  },
+  {
+    "alarmId": "ALM-000160",
+    "timestamp": "2026-09-22T02:32:30.808Z",
+    "siteId": "VSKP-010",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T06:09:52.210Z"
+  },
+  {
+    "alarmId": "ALM-000084",
+    "timestamp": "2026-09-22T02:23:18.301Z",
+    "siteId": "VSKP-004",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T09:43:33.020Z"
+  },
+  {
+    "alarmId": "ALM-000267",
+    "timestamp": "2026-09-22T02:15:29.786Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000263",
+    "timestamp": "2026-09-22T02:05:20.020Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000220",
+    "timestamp": "2026-09-22T01:34:19.913Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T05:59:20.854Z"
+  },
+  {
+    "alarmId": "ALM-000011",
+    "timestamp": "2026-09-22T00:54:19.503Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T05:38:04.972Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000242",
+    "timestamp": "2026-09-22T00:36:43.769Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T07:27:31.249Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000061",
+    "timestamp": "2026-09-22T00:24:02.417Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T01:52:33.644Z"
+  },
+  {
+    "alarmId": "ALM-000256",
+    "timestamp": "2026-09-21T23:25:54.160Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T08:23:25.883Z"
+  },
+  {
+    "alarmId": "ALM-000068",
+    "timestamp": "2026-09-21T23:25:07.163Z",
+    "siteId": "VSKP-006",
+    "cellId": "VSKP-006-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000106",
+    "timestamp": "2026-09-21T23:20:55.387Z",
+    "siteId": "VSKP-001",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T06:52:43.327Z"
+  },
+  {
+    "alarmId": "ALM-000260",
+    "timestamp": "2026-09-21T23:08:26.743Z",
+    "siteId": "VSKP-005",
+    "cellId": "VSKP-005-L1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T01:00:11.249Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000048",
+    "timestamp": "2026-09-21T22:50:48.827Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T04:29:24.388Z"
+  },
+  {
+    "alarmId": "ALM-000129",
+    "timestamp": "2026-09-21T22:42:28.374Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T08:27:24.654Z"
+  },
+  {
+    "alarmId": "ALM-000085",
+    "timestamp": "2026-09-21T22:15:57.709Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T05:38:04.431Z"
+  },
+  {
+    "alarmId": "ALM-000261",
+    "timestamp": "2026-09-21T22:08:25.440Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T01:36:34.566Z"
+  },
+  {
+    "alarmId": "ALM-000146",
+    "timestamp": "2026-09-21T21:59:58.559Z",
+    "siteId": "VSKP-010",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T06:06:54.977Z"
+  },
+  {
+    "alarmId": "ALM-000076",
+    "timestamp": "2026-09-21T20:31:34.185Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T02:26:00.264Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000051",
+    "timestamp": "2026-09-21T19:09:11.956Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000279",
+    "timestamp": "2026-09-21T18:56:48.031Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T20:28:32.882Z"
+  },
+  {
+    "alarmId": "ALM-000060",
+    "timestamp": "2026-09-21T18:49:21.957Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T03:45:59.323Z"
+  },
+  {
+    "alarmId": "ALM-000154",
+    "timestamp": "2026-09-21T18:34:48.165Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T20:54:57.299Z"
+  },
+  {
+    "alarmId": "ALM-000221",
+    "timestamp": "2026-09-21T18:19:05.409Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T01:05:17.947Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000262",
+    "timestamp": "2026-09-21T17:02:14.455Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T02:42:35.891Z"
+  },
+  {
+    "alarmId": "ALM-000257",
+    "timestamp": "2026-09-21T16:56:04.060Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T02:27:26.017Z"
+  },
+  {
+    "alarmId": "ALM-000171",
+    "timestamp": "2026-09-21T16:38:05.958Z",
+    "siteId": "VSKP-006",
+    "cellId": "VSKP-006-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000291",
+    "timestamp": "2026-09-21T16:21:43.186Z",
+    "siteId": "VSKP-006",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T23:17:50.215Z"
+  },
+  {
+    "alarmId": "ALM-000054",
+    "timestamp": "2026-09-21T15:46:12.779Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T21:12:45.488Z"
+  },
+  {
+    "alarmId": "ALM-000174",
+    "timestamp": "2026-09-21T15:42:27.251Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "acknowledged",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000172",
+    "timestamp": "2026-09-21T15:34:12.538Z",
+    "siteId": "VSKP-012",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000296",
+    "timestamp": "2026-09-21T15:22:40.244Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T21:49:20.922Z"
+  },
+  {
+    "alarmId": "ALM-000013",
+    "timestamp": "2026-09-21T14:59:58.361Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T21:33:34.772Z"
+  },
+  {
+    "alarmId": "ALM-000233",
+    "timestamp": "2026-09-21T14:41:30.063Z",
+    "siteId": "VSKP-007",
+    "cellId": "VSKP-007-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T21:25:42.888Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000194",
+    "timestamp": "2026-09-21T14:28:37.366Z",
+    "siteId": "VSKP-011",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-22T00:33:46.375Z"
+  },
+  {
+    "alarmId": "ALM-000288",
+    "timestamp": "2026-09-21T13:57:42.329Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T22:30:19.450Z"
+  },
+  {
+    "alarmId": "ALM-000066",
+    "timestamp": "2026-09-21T12:11:24.044Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T16:05:41.330Z"
+  },
+  {
+    "alarmId": "ALM-000067",
+    "timestamp": "2026-09-21T11:14:43.543Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000017",
+    "timestamp": "2026-09-21T11:07:08.519Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T15:23:33.199Z"
+  },
+  {
+    "alarmId": "ALM-000223",
+    "timestamp": "2026-09-21T10:37:19.007Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000005",
+    "timestamp": "2026-09-21T10:34:48.914Z",
+    "siteId": "VSKP-002",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000059",
+    "timestamp": "2026-09-21T10:32:10.786Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T19:08:44.190Z"
+  },
+  {
+    "alarmId": "ALM-000270",
+    "timestamp": "2026-09-21T10:01:29.857Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T19:18:43.631Z"
+  },
+  {
+    "alarmId": "ALM-000211",
+    "timestamp": "2026-09-21T09:56:46.642Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T13:13:39.532Z"
+  },
+  {
+    "alarmId": "ALM-000227",
+    "timestamp": "2026-09-21T09:18:41.484Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T15:09:08.773Z"
+  },
+  {
+    "alarmId": "ALM-000065",
+    "timestamp": "2026-09-21T08:57:55.059Z",
+    "siteId": "VSKP-012",
+    "cellId": "VSKP-012-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T11:23:49.828Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000198",
+    "timestamp": "2026-09-21T08:42:42.983Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T17:06:22.496Z"
+  },
+  {
+    "alarmId": "ALM-000016",
+    "timestamp": "2026-09-21T07:33:45.404Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T09:15:55.294Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000246",
+    "timestamp": "2026-09-21T07:17:19.963Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000176",
+    "timestamp": "2026-09-21T06:43:23.015Z",
+    "siteId": "VSKP-011",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000121",
+    "timestamp": "2026-09-21T06:11:31.799Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T16:03:02.045Z"
+  },
+  {
+    "alarmId": "ALM-000072",
+    "timestamp": "2026-09-21T05:45:28.560Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000177",
+    "timestamp": "2026-09-21T05:14:21.872Z",
+    "siteId": "VSKP-001",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000039",
+    "timestamp": "2026-09-21T05:01:10.576Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T07:18:19.465Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000010",
+    "timestamp": "2026-09-21T04:35:35.802Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T11:14:16.422Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000050",
+    "timestamp": "2026-09-21T04:34:43.459Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T12:57:51.781Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000049",
+    "timestamp": "2026-09-21T04:31:08.876Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T12:56:00.921Z"
+  },
+  {
+    "alarmId": "ALM-000144",
+    "timestamp": "2026-09-21T04:15:45.453Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T14:25:38.600Z"
+  },
+  {
+    "alarmId": "ALM-000093",
+    "timestamp": "2026-09-21T03:33:59.794Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T07:00:43.331Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000201",
+    "timestamp": "2026-09-21T03:09:38.874Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T12:40:02.515Z"
+  },
+  {
+    "alarmId": "ALM-000145",
+    "timestamp": "2026-09-21T03:07:17.463Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000265",
+    "timestamp": "2026-09-21T00:15:31.580Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000151",
+    "timestamp": "2026-09-20T20:25:03.869Z",
+    "siteId": "VSKP-006",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T05:57:38.705Z"
+  },
+  {
+    "alarmId": "ALM-000205",
+    "timestamp": "2026-09-20T20:10:39.601Z",
+    "siteId": "VSKP-001",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000229",
+    "timestamp": "2026-09-20T19:24:43.131Z",
+    "siteId": "VSKP-010",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000028",
+    "timestamp": "2026-09-20T19:14:55.212Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000058",
+    "timestamp": "2026-09-20T18:55:55.216Z",
+    "siteId": "VSKP-011",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T00:26:58.261Z"
+  },
+  {
+    "alarmId": "ALM-000108",
+    "timestamp": "2026-09-20T18:38:40.024Z",
+    "siteId": "VSKP-012",
+    "cellId": "VSKP-012-L3",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T03:04:44.737Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000004",
+    "timestamp": "2026-09-20T18:30:00.000Z",
+    "siteId": "VSKP-002",
+    "cellId": "VSKP-002-L1",
+    "severity": "Minor",
+    "probableCause": "VSWR high",
+    "state": "acknowledged",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000073",
+    "timestamp": "2026-09-20T18:21:48.630Z",
+    "siteId": "VSKP-012",
+    "cellId": "VSKP-012-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T23:15:18.644Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000077",
+    "timestamp": "2026-09-20T18:19:46.844Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T00:48:10.297Z"
+  },
+  {
+    "alarmId": "ALM-000035",
+    "timestamp": "2026-09-20T18:13:12.038Z",
+    "siteId": "VSKP-010",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T21:22:48.541Z"
+  },
+  {
+    "alarmId": "ALM-000097",
+    "timestamp": "2026-09-20T16:08:49.791Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000259",
+    "timestamp": "2026-09-20T15:49:00.775Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000212",
+    "timestamp": "2026-09-20T15:43:23.447Z",
+    "siteId": "VSKP-008",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T20:38:00.241Z"
+  },
+  {
+    "alarmId": "ALM-000070",
+    "timestamp": "2026-09-20T15:16:33.149Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-21T00:17:55.631Z"
+  },
+  {
+    "alarmId": "ALM-000231",
+    "timestamp": "2026-09-20T14:10:16.186Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000197",
+    "timestamp": "2026-09-20T13:23:26.256Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T19:51:11.877Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000043",
+    "timestamp": "2026-09-20T12:59:30.543Z",
+    "siteId": "VSKP-003",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T17:37:09.427Z"
+  },
+  {
+    "alarmId": "ALM-000083",
+    "timestamp": "2026-09-20T12:21:09.164Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000124",
+    "timestamp": "2026-09-20T11:59:51.680Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L3",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T21:46:28.111Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000283",
+    "timestamp": "2026-09-20T10:50:21.849Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000080",
+    "timestamp": "2026-09-20T09:30:46.332Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000299",
+    "timestamp": "2026-09-20T09:12:32.571Z",
+    "siteId": "VSKP-005",
+    "cellId": "VSKP-005-L1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T14:04:10.947Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000162",
+    "timestamp": "2026-09-20T07:43:52.109Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T13:03:16.695Z"
+  },
+  {
+    "alarmId": "ALM-000204",
+    "timestamp": "2026-09-20T07:36:37.409Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T13:55:48.092Z"
+  },
+  {
+    "alarmId": "ALM-000118",
+    "timestamp": "2026-09-20T07:30:28.377Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000275",
+    "timestamp": "2026-09-20T06:35:50.334Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T09:41:20.835Z"
+  },
+  {
+    "alarmId": "ALM-000094",
+    "timestamp": "2026-09-20T06:20:33.074Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "acknowledged",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000003",
+    "timestamp": "2026-09-20T05:30:00.000Z",
+    "siteId": "VSKP-010",
+    "severity": "Major",
+    "probableCause": "Transmission link degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T07:30:00.000Z"
+  },
+  {
+    "alarmId": "ALM-000038",
+    "timestamp": "2026-09-20T04:57:01.435Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000215",
+    "timestamp": "2026-09-20T04:06:07.055Z",
+    "siteId": "VSKP-012",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000272",
+    "timestamp": "2026-09-20T01:53:55.819Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000156",
+    "timestamp": "2026-09-20T01:49:45.844Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000008",
+    "timestamp": "2026-09-19T23:53:17.054Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T09:20:00.326Z"
+  },
+  {
+    "alarmId": "ALM-000228",
+    "timestamp": "2026-09-19T23:22:25.260Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T03:16:36.067Z"
+  },
+  {
+    "alarmId": "ALM-000191",
+    "timestamp": "2026-09-19T23:20:29.677Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T09:02:33.618Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000128",
+    "timestamp": "2026-09-19T21:54:04.765Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T04:11:29.761Z"
+  },
+  {
+    "alarmId": "ALM-000141",
+    "timestamp": "2026-09-19T21:23:33.928Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000298",
+    "timestamp": "2026-09-19T20:47:31.833Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T00:56:20.528Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000111",
+    "timestamp": "2026-09-19T20:23:43.624Z",
+    "siteId": "VSKP-004",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000179",
+    "timestamp": "2026-09-19T19:34:02.818Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T20:31:38.975Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000062",
+    "timestamp": "2026-09-19T19:19:47.467Z",
+    "siteId": "VSKP-004",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-20T03:05:42.388Z"
+  },
+  {
+    "alarmId": "ALM-000109",
+    "timestamp": "2026-09-19T18:55:43.288Z",
+    "siteId": "VSKP-011",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000079",
+    "timestamp": "2026-09-19T18:33:00.836Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000213",
+    "timestamp": "2026-09-19T18:10:56.384Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T20:42:47.427Z"
+  },
+  {
+    "alarmId": "ALM-000240",
+    "timestamp": "2026-09-19T17:02:37.045Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000104",
+    "timestamp": "2026-09-19T16:49:22.231Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000021",
+    "timestamp": "2026-09-19T16:17:51.369Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T23:54:15.136Z"
+  },
+  {
+    "alarmId": "ALM-000024",
+    "timestamp": "2026-09-19T15:24:25.308Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T19:09:31.601Z"
+  },
+  {
+    "alarmId": "ALM-000033",
+    "timestamp": "2026-09-19T14:41:12.936Z",
+    "siteId": "VSKP-004",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T19:08:03.435Z"
+  },
+  {
+    "alarmId": "ALM-000069",
+    "timestamp": "2026-09-19T14:27:22.942Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L2",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "acknowledged",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000091",
+    "timestamp": "2026-09-19T14:15:57.008Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T16:43:33.705Z"
+  },
+  {
+    "alarmId": "ALM-000247",
+    "timestamp": "2026-09-19T13:53:45.265Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T17:53:40.952Z"
+  },
+  {
+    "alarmId": "ALM-000297",
+    "timestamp": "2026-09-19T13:44:29.421Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T23:35:47.450Z"
+  },
+  {
+    "alarmId": "ALM-000002",
+    "timestamp": "2026-09-19T12:30:00.000Z",
+    "siteId": "VSKP-007",
+    "cellId": "VSKP-007-N1",
+    "severity": "Major",
+    "probableCause": "High PRB utilization",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000230",
+    "timestamp": "2026-09-19T12:25:27.253Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T15:30:30.198Z"
+  },
+  {
+    "alarmId": "ALM-000193",
+    "timestamp": "2026-09-19T12:24:11.128Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000015",
+    "timestamp": "2026-09-19T11:29:24.549Z",
+    "siteId": "VSKP-010",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T19:44:21.255Z"
+  },
+  {
+    "alarmId": "ALM-000224",
+    "timestamp": "2026-09-19T11:11:31.635Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T20:08:01.757Z"
+  },
+  {
+    "alarmId": "ALM-000026",
+    "timestamp": "2026-09-19T10:25:59.764Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T16:49:35.025Z"
+  },
+  {
+    "alarmId": "ALM-000138",
+    "timestamp": "2026-09-19T10:11:13.679Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000185",
+    "timestamp": "2026-09-19T10:02:49.925Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T17:07:37.132Z"
+  },
+  {
+    "alarmId": "ALM-000153",
+    "timestamp": "2026-09-19T09:28:44.690Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T19:05:42.454Z"
+  },
+  {
+    "alarmId": "ALM-000158",
+    "timestamp": "2026-09-19T09:19:53.840Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T11:07:28.413Z"
+  },
+  {
+    "alarmId": "ALM-000280",
+    "timestamp": "2026-09-19T09:06:29.964Z",
+    "siteId": "VSKP-008",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T14:39:10.435Z"
+  },
+  {
+    "alarmId": "ALM-000140",
+    "timestamp": "2026-09-19T08:07:58.253Z",
+    "siteId": "VSKP-008",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T09:12:15.098Z"
+  },
+  {
+    "alarmId": "ALM-000075",
+    "timestamp": "2026-09-19T07:05:31.196Z",
+    "siteId": "VSKP-008",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000190",
+    "timestamp": "2026-09-19T07:04:56.128Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T10:36:06.777Z"
+  },
+  {
+    "alarmId": "ALM-000187",
+    "timestamp": "2026-09-19T06:09:29.345Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T13:56:30.699Z"
+  },
+  {
+    "alarmId": "ALM-000226",
+    "timestamp": "2026-09-19T06:04:00.023Z",
+    "siteId": "VSKP-004",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T06:27:32.299Z"
+  },
+  {
+    "alarmId": "ALM-000088",
+    "timestamp": "2026-09-19T05:57:47.717Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T09:58:50.226Z"
+  },
+  {
+    "alarmId": "ALM-000098",
+    "timestamp": "2026-09-19T05:50:13.955Z",
+    "siteId": "VSKP-008",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T10:51:36.052Z"
+  },
+  {
+    "alarmId": "ALM-000294",
+    "timestamp": "2026-09-19T05:41:01.840Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T08:01:07.465Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000199",
+    "timestamp": "2026-09-19T05:36:17.348Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T09:41:47.389Z"
+  },
+  {
+    "alarmId": "ALM-000082",
+    "timestamp": "2026-09-19T05:17:42.378Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T07:28:18.360Z"
+  },
+  {
+    "alarmId": "ALM-000117",
+    "timestamp": "2026-09-19T04:57:20.129Z",
+    "siteId": "VSKP-012",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T09:14:12.796Z"
+  },
+  {
+    "alarmId": "ALM-000164",
+    "timestamp": "2026-09-19T04:47:39.734Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T14:41:02.875Z"
+  },
+  {
+    "alarmId": "ALM-000135",
+    "timestamp": "2026-09-19T02:42:13.440Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T09:19:36.740Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000025",
+    "timestamp": "2026-09-19T02:27:53.729Z",
+    "siteId": "VSKP-002",
+    "cellId": "VSKP-002-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T04:11:10.583Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000009",
+    "timestamp": "2026-09-19T01:51:09.126Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000218",
+    "timestamp": "2026-09-19T00:50:39.216Z",
+    "siteId": "VSKP-008",
+    "cellId": "VSKP-008-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000096",
+    "timestamp": "2026-09-19T00:50:21.608Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L3",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T09:58:23.522Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000071",
+    "timestamp": "2026-09-19T00:03:34.947Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T08:22:59.848Z"
+  },
+  {
+    "alarmId": "ALM-000290",
+    "timestamp": "2026-09-18T21:30:12.405Z",
+    "siteId": "VSKP-008",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T21:52:14.557Z"
+  },
+  {
+    "alarmId": "ALM-000057",
+    "timestamp": "2026-09-18T20:42:42.850Z",
+    "siteId": "VSKP-011",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T06:25:12.789Z"
+  },
+  {
+    "alarmId": "ALM-000271",
+    "timestamp": "2026-09-18T19:58:18.159Z",
+    "siteId": "VSKP-006",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-19T03:47:15.036Z"
+  },
+  {
+    "alarmId": "ALM-000105",
+    "timestamp": "2026-09-18T18:21:05.588Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T22:01:09.419Z"
+  },
+  {
+    "alarmId": "ALM-000007",
+    "timestamp": "2026-09-18T18:14:48.367Z",
+    "siteId": "VSKP-008",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T22:07:44.612Z"
+  },
+  {
+    "alarmId": "ALM-000248",
+    "timestamp": "2026-09-18T18:14:02.135Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T19:14:19.824Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000186",
+    "timestamp": "2026-09-18T17:27:25.693Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T18:46:52.357Z"
+  },
+  {
+    "alarmId": "ALM-000236",
+    "timestamp": "2026-09-18T16:17:59.875Z",
+    "siteId": "VSKP-012",
+    "cellId": "VSKP-012-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T17:12:19.525Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000196",
+    "timestamp": "2026-09-18T15:47:43.312Z",
+    "siteId": "VSKP-010",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T20:22:21.614Z"
+  },
+  {
+    "alarmId": "ALM-000169",
+    "timestamp": "2026-09-18T15:02:16.766Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000042",
+    "timestamp": "2026-09-18T14:40:13.641Z",
+    "siteId": "VSKP-006",
+    "cellId": "VSKP-006-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000134",
+    "timestamp": "2026-09-18T14:28:49.828Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000149",
+    "timestamp": "2026-09-18T14:13:20.272Z",
+    "siteId": "VSKP-012",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000168",
+    "timestamp": "2026-09-18T13:45:34.255Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000195",
+    "timestamp": "2026-09-18T12:30:27.510Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000278",
+    "timestamp": "2026-09-18T11:34:50.366Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T16:34:28.666Z"
+  },
+  {
+    "alarmId": "ALM-000295",
+    "timestamp": "2026-09-18T11:22:58.478Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-L1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T20:03:17.500Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000234",
+    "timestamp": "2026-09-18T11:18:04.967Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T20:53:54.732Z"
+  },
+  {
+    "alarmId": "ALM-000132",
+    "timestamp": "2026-09-18T10:54:11.719Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T20:30:46.137Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000182",
+    "timestamp": "2026-09-18T10:00:48.088Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T19:00:35.645Z"
+  },
+  {
+    "alarmId": "ALM-000300",
+    "timestamp": "2026-09-18T09:55:11.702Z",
+    "siteId": "VSKP-004",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T16:29:18.855Z"
+  },
+  {
+    "alarmId": "ALM-000273",
+    "timestamp": "2026-09-18T09:31:21.118Z",
+    "siteId": "VSKP-008",
+    "cellId": "VSKP-008-N1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T14:25:37.629Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000032",
+    "timestamp": "2026-09-18T09:13:11.521Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "acknowledged",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000046",
+    "timestamp": "2026-09-18T09:10:08.551Z",
+    "siteId": "VSKP-011",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T18:00:40.848Z"
+  },
+  {
+    "alarmId": "ALM-000053",
+    "timestamp": "2026-09-18T08:41:30.739Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T15:42:33.900Z"
+  },
+  {
+    "alarmId": "ALM-000041",
+    "timestamp": "2026-09-18T08:23:44.564Z",
+    "siteId": "VSKP-002",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T14:16:36.260Z"
+  },
+  {
+    "alarmId": "ALM-000269",
+    "timestamp": "2026-09-18T07:33:19.603Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000022",
+    "timestamp": "2026-09-18T07:01:02.080Z",
+    "siteId": "VSKP-010",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T12:34:16.800Z"
+  },
+  {
+    "alarmId": "ALM-000143",
+    "timestamp": "2026-09-18T04:56:05.687Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T08:07:54.186Z"
+  },
+  {
+    "alarmId": "ALM-000110",
+    "timestamp": "2026-09-18T04:51:14.336Z",
+    "siteId": "VSKP-002",
+    "cellId": "VSKP-002-L3",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T10:06:47.685Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000012",
+    "timestamp": "2026-09-18T03:52:05.938Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T06:58:58.228Z"
+  },
+  {
+    "alarmId": "ALM-000001",
+    "timestamp": "2026-09-18T03:30:00.000Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L2",
+    "severity": "Critical",
+    "probableCause": "Cell down",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T09:30:00.000Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000161",
+    "timestamp": "2026-09-18T03:18:49.307Z",
+    "siteId": "VSKP-007",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T05:46:39.605Z"
+  },
+  {
+    "alarmId": "ALM-000251",
+    "timestamp": "2026-09-18T02:13:42.083Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T07:40:09.850Z"
+  },
+  {
+    "alarmId": "ALM-000092",
+    "timestamp": "2026-09-18T01:01:51.238Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000203",
+    "timestamp": "2026-09-18T00:26:39.988Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T05:57:47.214Z"
+  },
+  {
+    "alarmId": "ALM-000276",
+    "timestamp": "2026-09-18T00:25:40.513Z",
+    "siteId": "VSKP-012",
+    "cellId": "VSKP-012-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "acknowledged",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000099",
+    "timestamp": "2026-09-17T23:52:19.582Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000019",
+    "timestamp": "2026-09-17T23:40:09.483Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000074",
+    "timestamp": "2026-09-17T23:29:37.117Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T03:05:11.112Z"
+  },
+  {
+    "alarmId": "ALM-000192",
+    "timestamp": "2026-09-17T23:01:32.392Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T05:55:25.064Z"
+  },
+  {
+    "alarmId": "ALM-000285",
+    "timestamp": "2026-09-17T22:53:59.237Z",
+    "siteId": "VSKP-007",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T05:29:55.725Z"
+  },
+  {
+    "alarmId": "ALM-000238",
+    "timestamp": "2026-09-17T22:49:28.109Z",
+    "siteId": "VSKP-005",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T07:51:49.560Z"
+  },
+  {
+    "alarmId": "ALM-000216",
+    "timestamp": "2026-09-17T22:42:25.411Z",
+    "siteId": "VSKP-008",
+    "cellId": "VSKP-008-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000266",
+    "timestamp": "2026-09-17T21:52:12.450Z",
+    "siteId": "VSKP-006",
+    "cellId": "VSKP-006-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T02:47:32.853Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000125",
+    "timestamp": "2026-09-17T21:23:07.487Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T00:29:04.485Z"
+  },
+  {
+    "alarmId": "ALM-000286",
+    "timestamp": "2026-09-17T19:22:17.959Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T19:51:15.231Z"
+  },
+  {
+    "alarmId": "ALM-000225",
+    "timestamp": "2026-09-17T18:42:04.436Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T03:38:27.101Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000159",
+    "timestamp": "2026-09-17T17:24:39.622Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T03:06:15.459Z"
+  },
+  {
+    "alarmId": "ALM-000235",
+    "timestamp": "2026-09-17T16:56:48.458Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-18T00:25:56.702Z"
+  },
+  {
+    "alarmId": "ALM-000239",
+    "timestamp": "2026-09-17T16:56:31.989Z",
+    "siteId": "VSKP-012",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T18:14:09.280Z"
+  },
+  {
+    "alarmId": "ALM-000289",
+    "timestamp": "2026-09-17T16:56:20.707Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000210",
+    "timestamp": "2026-09-17T16:46:41.897Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T18:06:10.206Z"
+  },
+  {
+    "alarmId": "ALM-000293",
+    "timestamp": "2026-09-17T16:43:45.467Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T17:46:10.351Z"
+  },
+  {
+    "alarmId": "ALM-000175",
+    "timestamp": "2026-09-17T15:32:11.147Z",
+    "siteId": "VSKP-007",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T20:23:11.194Z"
+  },
+  {
+    "alarmId": "ALM-000282",
+    "timestamp": "2026-09-17T14:30:11.835Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T20:52:46.636Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000055",
+    "timestamp": "2026-09-17T14:02:55.967Z",
+    "siteId": "VSKP-008",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T21:37:02.858Z"
+  },
+  {
+    "alarmId": "ALM-000189",
+    "timestamp": "2026-09-17T12:39:55.736Z",
+    "siteId": "VSKP-008",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T21:21:24.584Z"
+  },
+  {
+    "alarmId": "ALM-000006",
+    "timestamp": "2026-09-17T11:58:16.782Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T18:54:07.330Z"
+  },
+  {
+    "alarmId": "ALM-000250",
+    "timestamp": "2026-09-17T11:07:12.868Z",
+    "siteId": "VSKP-005",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000206",
+    "timestamp": "2026-09-17T10:49:44.641Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000178",
+    "timestamp": "2026-09-17T09:29:13.887Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T11:21:55.940Z"
+  },
+  {
+    "alarmId": "ALM-000217",
+    "timestamp": "2026-09-17T08:43:00.995Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T10:39:14.615Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000031",
+    "timestamp": "2026-09-17T08:07:24.556Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L2",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T12:39:44.281Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000292",
+    "timestamp": "2026-09-17T07:47:40.204Z",
+    "siteId": "VSKP-004",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T12:46:00.224Z"
+  },
+  {
+    "alarmId": "ALM-000167",
+    "timestamp": "2026-09-17T07:11:15.638Z",
+    "siteId": "VSKP-005",
+    "cellId": "VSKP-005-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T13:58:17.180Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000244",
+    "timestamp": "2026-09-17T06:23:59.336Z",
+    "siteId": "VSKP-002",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T13:18:27.867Z"
+  },
+  {
+    "alarmId": "ALM-000207",
+    "timestamp": "2026-09-17T04:37:09.801Z",
+    "siteId": "VSKP-009",
+    "cellId": "VSKP-009-L3",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000136",
+    "timestamp": "2026-09-17T04:30:22.052Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T13:41:29.785Z"
+  },
+  {
+    "alarmId": "ALM-000214",
+    "timestamp": "2026-09-17T03:38:49.672Z",
+    "siteId": "VSKP-012",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T13:04:43.215Z"
+  },
+  {
+    "alarmId": "ALM-000157",
+    "timestamp": "2026-09-17T03:07:58.830Z",
+    "siteId": "VSKP-005",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000114",
+    "timestamp": "2026-09-17T02:45:14.427Z",
+    "siteId": "VSKP-010",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T03:33:51.914Z"
+  },
+  {
+    "alarmId": "ALM-000095",
+    "timestamp": "2026-09-17T01:47:54.033Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T06:26:37.468Z"
+  },
+  {
+    "alarmId": "ALM-000034",
+    "timestamp": "2026-09-17T01:41:26.284Z",
+    "siteId": "VSKP-007",
+    "cellId": "VSKP-007-L1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T05:16:40.195Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000045",
+    "timestamp": "2026-09-17T01:36:53.041Z",
+    "siteId": "VSKP-007",
+    "cellId": "VSKP-007-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T11:01:23.534Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000116",
+    "timestamp": "2026-09-17T00:15:22.300Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000078",
+    "timestamp": "2026-09-16T23:30:40.876Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "acknowledged",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000202",
+    "timestamp": "2026-09-16T23:20:58.377Z",
+    "siteId": "VSKP-003",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T02:42:10.907Z"
+  },
+  {
+    "alarmId": "ALM-000127",
+    "timestamp": "2026-09-16T20:54:44.339Z",
+    "siteId": "VSKP-004",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "acknowledged"
+  },
+  {
+    "alarmId": "ALM-000152",
+    "timestamp": "2026-09-16T19:58:11.996Z",
+    "siteId": "VSKP-008",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000249",
+    "timestamp": "2026-09-16T19:42:42.253Z",
+    "siteId": "VSKP-012",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T04:07:01.447Z"
+  },
+  {
+    "alarmId": "ALM-000165",
+    "timestamp": "2026-09-16T19:16:05.244Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-L1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000027",
+    "timestamp": "2026-09-16T19:09:43.268Z",
+    "siteId": "VSKP-003",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T21:20:52.963Z"
+  },
+  {
+    "alarmId": "ALM-000133",
+    "timestamp": "2026-09-16T17:43:01.073Z",
+    "siteId": "VSKP-008",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T23:53:31.320Z"
+  },
+  {
+    "alarmId": "ALM-000183",
+    "timestamp": "2026-09-16T17:36:37.282Z",
+    "siteId": "VSKP-008",
+    "cellId": "VSKP-008-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T18:43:08.889Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000150",
+    "timestamp": "2026-09-16T16:10:05.517Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T01:59:44.621Z"
+  },
+  {
+    "alarmId": "ALM-000148",
+    "timestamp": "2026-09-16T16:08:41.683Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T17:07:39.380Z"
+  },
+  {
+    "alarmId": "ALM-000086",
+    "timestamp": "2026-09-16T15:55:14.437Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T23:23:41.485Z"
+  },
+  {
+    "alarmId": "ALM-000122",
+    "timestamp": "2026-09-16T15:19:21.789Z",
+    "siteId": "VSKP-002",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T23:50:16.475Z"
+  },
+  {
+    "alarmId": "ALM-000163",
+    "timestamp": "2026-09-16T15:18:05.108Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Battery on discharge",
+    "state": "cleared",
+    "clearedAt": "2026-09-17T01:09:03.431Z"
+  },
+  {
+    "alarmId": "ALM-000126",
+    "timestamp": "2026-09-16T14:45:51.292Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T21:04:42.694Z"
+  },
+  {
+    "alarmId": "ALM-000255",
+    "timestamp": "2026-09-16T14:34:52.949Z",
+    "siteId": "VSKP-003",
+    "cellId": "VSKP-003-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T22:23:04.501Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000166",
+    "timestamp": "2026-09-16T14:24:29.701Z",
+    "siteId": "VSKP-001",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T19:57:48.727Z"
+  },
+  {
+    "alarmId": "ALM-000044",
+    "timestamp": "2026-09-16T14:03:42.011Z",
+    "siteId": "VSKP-006",
+    "severity": "Minor",
+    "probableCause": "Packet loss on backhaul",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000113",
+    "timestamp": "2026-09-16T14:03:39.879Z",
+    "siteId": "VSKP-010",
+    "cellId": "VSKP-010-L2",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000222",
+    "timestamp": "2026-09-16T13:58:53.454Z",
+    "siteId": "VSKP-007",
+    "severity": "Major",
+    "probableCause": "Mains power failure",
+    "state": "active"
+  },
+  {
+    "alarmId": "ALM-000089",
+    "timestamp": "2026-09-16T13:46:33.575Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-N1",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T16:12:55.185Z",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000287",
+    "timestamp": "2026-09-16T13:13:14.845Z",
+    "siteId": "VSKP-004",
+    "cellId": "VSKP-004-L3",
+    "severity": "Major",
+    "probableCause": "Sleeping cell suspected",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T22:08:05.038Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000245",
+    "timestamp": "2026-09-16T12:42:11.481Z",
+    "siteId": "VSKP-009",
+    "severity": "Warning",
+    "probableCause": "Rectifier fault",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T18:22:36.936Z"
+  },
+  {
+    "alarmId": "ALM-000137",
+    "timestamp": "2026-09-16T12:11:53.890Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-N1",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "active",
+    "technology": "NR"
+  },
+  {
+    "alarmId": "ALM-000147",
+    "timestamp": "2026-09-16T11:32:37.762Z",
+    "siteId": "VSKP-003",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T16:21:38.483Z"
+  },
+  {
+    "alarmId": "ALM-000180",
+    "timestamp": "2026-09-16T11:22:23.780Z",
+    "siteId": "VSKP-009",
+    "severity": "Minor",
+    "probableCause": "Temperature high",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T18:39:21.190Z"
+  },
+  {
+    "alarmId": "ALM-000023",
+    "timestamp": "2026-09-16T11:10:12.624Z",
+    "siteId": "VSKP-011",
+    "cellId": "VSKP-011-L3",
+    "severity": "Minor",
+    "probableCause": "Handover success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T14:39:14.311Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000237",
+    "timestamp": "2026-09-16T10:52:34.585Z",
+    "siteId": "VSKP-001",
+    "cellId": "VSKP-001-L2",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "active",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000112",
+    "timestamp": "2026-09-16T10:40:16.945Z",
+    "siteId": "VSKP-003",
+    "severity": "Warning",
+    "probableCause": "Door open",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T16:59:38.685Z"
+  },
+  {
+    "alarmId": "ALM-000277",
+    "timestamp": "2026-09-16T10:24:52.899Z",
+    "siteId": "VSKP-008",
+    "cellId": "VSKP-008-L1",
+    "severity": "Minor",
+    "probableCause": "RRC setup success degraded",
+    "state": "cleared",
+    "clearedAt": "2026-09-16T17:02:17.598Z",
+    "technology": "LTE"
+  },
+  {
+    "alarmId": "ALM-000130",
+    "timestamp": "2026-09-16T10:14:37.863Z",
+    "siteId": "VSKP-006",
+    "severity": "Warning",
+    "probableCause": "GPS synchronisation lost",
+    "state": "active"
+  }
+]
