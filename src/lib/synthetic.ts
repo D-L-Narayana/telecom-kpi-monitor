@@ -32,6 +32,28 @@ export interface Incident {
   alarmId: string;
 }
 
+/** An `Incident` whose window is given as ISO 8601 UTC strings (the format of `KpiSample.timestamp` / `Alarm.timestamp`). */
+export interface IncidentWindow extends Omit<Incident, "start" | "end"> {
+  start: string;
+  end: string;
+}
+
+/**
+ * The four injected incidents as fixed ISO windows — the same instants `generateDataset().incidents` computes
+ * (tests/synthetic.test.ts cross-checks both against the README's IST timeline). Lets pages, reports and tests
+ * reference the known windows without regenerating the dataset. IST = UTC+05:30.
+ */
+export const INCIDENT_WINDOWS: readonly IncidentWindow[] = [
+  // 18 Sep 09:00–15:00 IST: VSKP-004-L2 has no counters for 24 intervals
+  { id: "INC-1", kind: "outage", title: "Cell outage", cellIds: ["VSKP-004-L2"], siteId: "VSKP-004", start: "2026-09-18T03:30:00.000Z", end: "2026-09-18T09:30:00.000Z", alarmId: "ALM-000001" },
+  // 19 Sep 18:00 IST – 22 Sep 23:00 IST: VSKP-007-N1 PRB 90–98 % and CDR 3–4 % every evening from 18:00 IST
+  { id: "INC-2", kind: "congestion", title: "Evening congestion", cellIds: ["VSKP-007-N1"], siteId: "VSKP-007", start: "2026-09-19T12:30:00.000Z", end: "2026-09-22T17:30:00.000Z", alarmId: "ALM-000002" },
+  // 20 Sep 11:00–13:00 IST: all four VSKP-010 cells at 120–180 ms latency, halved throughput
+  { id: "INC-3", kind: "transmission", title: "Transmission link degraded", cellIds: ["VSKP-010-L1", "VSKP-010-L2", "VSKP-010-L3", "VSKP-010-N1"], siteId: "VSKP-010", start: "2026-09-20T05:30:00.000Z", end: "2026-09-20T07:30:00.000Z", alarmId: "ALM-000003" },
+  // 21 Sep 00:00 IST until the dataset end (23 Sep 14:30 IST): VSKP-002-L1 RSRP −12 dB, handover success ≈ 88 %
+  { id: "INC-4", kind: "antenna", title: "Antenna / VSWR fault", cellIds: ["VSKP-002-L1"], siteId: "VSKP-002", start: "2026-09-20T18:30:00.000Z", end: "2026-09-23T09:00:00.000Z", alarmId: "ALM-000004" },
+];
+
 export interface Dataset {
   sites: Site[];
   cells: Cell[];

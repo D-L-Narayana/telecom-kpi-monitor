@@ -1,0 +1,4 @@
+cellId,timestamp,callDropRatePct,rrcSetupSuccessPct,handoverSuccessPct,dlThroughputMbps,ulThroughputMbps,prbUtilizationPct,rsrpAvgDbm,sinrAvgDb,activeUsers
+DEMO-001-L1,2026-09-23T06:15:00.000Z,0.61,99.02,98.15,33.4,10.3,35.2,-92.1,7.4,64
+DEMO-001-L1,not-a-timestamp,0.66,98.95,98.1,32.9,10.1,37,-92.3,7.2,68
+DEMO-001-L1,2026-09-23T06:45:00.000Z,0.7,98.9,98.05,32.3,9.9,120.5,-92.2,7.3,72

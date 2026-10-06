@@ -1,0 +1,21 @@
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter:
+
+eth                                      frames:12 bytes:3246
+  ethertype                              frames:12 bytes:3246
+    ip                                   frames:11 bytes:3186
+      udp                                frames:7 bytes:2416
+        gtp                              frames:6 bytes:2318
+          ip                             frames:6 bytes:2318
+            tcp                          frames:4 bytes:2194
+              data                       frames:2 bytes:1600
+            udp                          frames:2 bytes:124
+              dns                        frames:2 bytes:124
+        dns                              frames:1 bytes:98
+      sctp                               frames:3 bytes:540
+        s1ap                             frames:3 bytes:540
+      tcp                                frames:1 bytes:230
+    arp                                  frames:1 bytes:60
+===================================================================

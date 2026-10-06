@@ -1,0 +1,6 @@
+[
+  { "cellId": "DEMO-001-L1", "siteId": "DEMO-001", "technology": "LTE", "band": "B20", "bandwidthMHz": 10, "azimuthDeg": 30 },
+  { "cellId": "DEMO-001-N1", "siteId": "DEMO-001", "technology": "NR", "band": "n78", "bandwidthMHz": 100, "azimuthDeg": 30 },
+  { "cellId": "DEMO-002-L1", "siteId": "DEMO-002", "technology": "LTE", "band": "B3", "bandwidthMHz": 20, "azimuthDeg": 210 },
+  { "cellId": "DEMO-002-N1", "siteId": "DEMO-002", "technology": "NR", "band": "n78", "bandwidthMHz": 100, "azimuthDeg": 210 }
+]

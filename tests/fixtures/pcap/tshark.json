@@ -1,0 +1,244 @@
+[
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.123456000 IST",
+          "frame.time_epoch": "1791007502.123456000",
+          "frame.number": "1",
+          "frame.len": "120",
+          "frame.cap_len": "120",
+          "frame.protocols": "eth:ethertype:ip:udp:gtp:ip:tcp"
+        },
+        "eth": { "eth.dst": "00:1b:21:3c:4d:5e", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0800" },
+        "ip": [
+          { "ip.version": "4", "ip.src": "10.40.1.10", "ip.dst": "172.16.0.5", "ip.proto": "17" },
+          { "ip.version": "4", "ip.src": "100.64.12.7", "ip.dst": "93.184.216.34", "ip.proto": "6" }
+        ],
+        "udp": { "udp.srcport": "2152", "udp.dstport": "2152", "udp.length": "100" },
+        "gtp": { "gtp.flags": "0x30", "gtp.message": "0xff", "gtp.length": "92", "gtp.teid": "0x00000a01" },
+        "tcp": {
+          "tcp.srcport": "51234",
+          "tcp.dstport": "443",
+          "tcp.seq": "1",
+          "tcp.ack": "1",
+          "tcp.len": "48",
+          "tcp.flags": "0x0018",
+          "tcp.analysis": { "tcp.analysis.bytes_in_flight": "48", "tcp.analysis.push_bytes_sent": "48" }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.324456000 IST",
+          "frame.time_epoch": "1791007502.324456000",
+          "frame.number": "2",
+          "frame.len": "1400",
+          "frame.cap_len": "1400",
+          "frame.protocols": "eth:ethertype:ip:udp:gtp:ip:tcp"
+        },
+        "eth": { "eth.dst": "00:1b:21:3c:4d:5e", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0800" },
+        "ip": [
+          { "ip.version": "4", "ip.src": "10.40.1.10", "ip.dst": "172.16.0.5", "ip.proto": "17" },
+          { "ip.version": "4", "ip.src": "100.64.12.7", "ip.dst": "93.184.216.34", "ip.proto": "6" }
+        ],
+        "udp": { "udp.srcport": "2152", "udp.dstport": "2152", "udp.length": "1380" },
+        "gtp": { "gtp.flags": "0x30", "gtp.message": "0xff", "gtp.length": "1372", "gtp.teid": "0x00000a01" },
+        "tcp": {
+          "tcp.srcport": "51234",
+          "tcp.dstport": "443",
+          "tcp.seq": "49",
+          "tcp.ack": "1",
+          "tcp.len": "1328",
+          "tcp.flags": "0x0018",
+          "tcp.analysis": {
+            "tcp.analysis.flags": {
+              "_ws.expert": {
+                "tcp.analysis.retransmission": "",
+                "_ws.expert.message": "This frame is a (suspected) retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "tcp.analysis.rto": "0.201000000",
+            "tcp.analysis.rto_frame": "1"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.401000000 IST",
+          "frame.time_epoch": "1791007502.401000000",
+          "frame.number": "3",
+          "frame.len": "600",
+          "frame.cap_len": "600",
+          "frame.protocols": "eth:ethertype:ip:udp:gtp:ip:tcp:data"
+        },
+        "eth": { "eth.dst": "00:1b:21:aa:bb:cc", "eth.src": "00:1b:21:3c:4d:5e", "eth.type": "0x0800" },
+        "ip": [
+          { "ip.version": "4", "ip.src": "172.16.0.5", "ip.dst": "10.40.1.10", "ip.proto": "17" },
+          { "ip.version": "4", "ip.src": "93.184.216.34", "ip.dst": "100.64.12.7", "ip.proto": "6" }
+        ],
+        "udp": { "udp.srcport": "2152", "udp.dstport": "2152", "udp.length": "580" },
+        "gtp": { "gtp.flags": "0x30", "gtp.message": "0xff", "gtp.length": "572", "gtp.teid": "0x00000b02" },
+        "tcp": {
+          "tcp.srcport": "8080",
+          "tcp.dstport": "51235",
+          "tcp.seq": "1",
+          "tcp.ack": "1",
+          "tcp.len": "528",
+          "tcp.flags": "0x0018",
+          "tcp.analysis": { "tcp.analysis.bytes_in_flight": "528" }
+        },
+        "data": { "data.data": "48:54:54:50:2f:31:2e:31:20:32:30:30", "data.len": "528" }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.455000000 IST",
+          "frame.time_epoch": "1791007502.455000000",
+          "frame.number": "4",
+          "frame.len": "98",
+          "frame.cap_len": "98",
+          "frame.protocols": "eth:ethertype:ip:udp:gtp:ip:udp:dns"
+        },
+        "eth": { "eth.dst": "00:1b:21:3c:4d:5e", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0800" },
+        "ip": [
+          { "ip.version": "4", "ip.src": "10.40.1.10", "ip.dst": "172.16.0.5", "ip.proto": "17" },
+          { "ip.version": "4", "ip.src": "100.64.12.7", "ip.dst": "10.1.0.53", "ip.proto": "17" }
+        ],
+        "udp": [
+          { "udp.srcport": "2152", "udp.dstport": "2152", "udp.length": "78" },
+          { "udp.srcport": "40123", "udp.dstport": "53", "udp.length": "42" }
+        ],
+        "gtp": { "gtp.flags": "0x30", "gtp.message": "0xff", "gtp.length": "70", "gtp.teid": "0x00000a01" },
+        "dns": { "dns.id": "0x1a2b", "dns.flags": "0x0100", "dns.count.queries": "1" }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.470000000 IST",
+          "frame.time_epoch": "1791007502.470000000",
+          "frame.number": "5",
+          "frame.len": "180",
+          "frame.cap_len": "180",
+          "frame.protocols": "eth:ethertype:ip:sctp:s1ap"
+        },
+        "eth": { "eth.dst": "00:1b:21:3c:4d:5e", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0800" },
+        "ip": { "ip.version": "4", "ip.src": "10.40.1.10", "ip.dst": "172.16.1.20", "ip.proto": "132" },
+        "sctp": { "sctp.srcport": "36412", "sctp.dstport": "36412", "sctp.verification_tag": "0x1f2e3d4c" },
+        "s1ap": { "s1ap.S1AP_PDU": "0", "s1ap.procedureCode": "12" }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.480000000 IST",
+          "frame.time_epoch": "1791007502.480000000",
+          "frame.number": "6",
+          "frame.len": "74",
+          "frame.cap_len": "74",
+          "frame.protocols": "eth:ethertype:ip:tcp"
+        },
+        "eth": { "eth.dst": "00:1b:21:3c:4d:5e", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0800" },
+        "ip": { "ip.version": "4", "ip.src": "10.40.1.10", "ip.dst": "10.40.0.2", "ip.proto": "6" },
+        "tcp": {
+          "tcp.srcport": "45678",
+          "tcp.dstport": "22",
+          "tcp.seq": "0",
+          "tcp.len": "0",
+          "tcp.flags": "0x0002",
+          "tcp.analysis": { "tcp.analysis.bytes_in_flight": "0" }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.490000000 IST",
+          "frame.time_epoch": "1791007502.490000000",
+          "frame.number": "7",
+          "frame.len": "60",
+          "frame.cap_len": "60",
+          "frame.protocols": "eth:ethertype:arp"
+        },
+        "eth": { "eth.dst": "ff:ff:ff:ff:ff:ff", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0806" },
+        "arp": { "arp.opcode": "1", "arp.src.proto_ipv4": "10.40.1.10", "arp.dst.proto_ipv4": "10.40.1.1" }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-10-04",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Oct  4, 2026 09:15:02.495000000 IST",
+          "frame.time_epoch": "1791007502.495000000",
+          "frame.number": "8",
+          "frame.len": "90",
+          "frame.cap_len": "90",
+          "frame.protocols": "eth:ethertype:ip:udp:gtp:_ws.malformed"
+        },
+        "eth": { "eth.dst": "00:1b:21:3c:4d:5e", "eth.src": "00:1b:21:aa:bb:cc", "eth.type": "0x0800" },
+        "ip": { "ip.version": "4", "ip.src": "10.40.1.10", "ip.dst": "172.16.0.5", "ip.proto": "17" },
+        "udp": { "udp.srcport": "2152", "udp.dstport": "2152", "udp.length": "70" },
+        "gtp": { "gtp.flags": "0x30", "gtp.message": "0xff", "gtp.length": "62", "gtp.teid": "0x00000a01" },
+        "_ws.malformed": {
+          "_ws.malformed.expert": {
+            "_ws.expert.message": "Malformed Packet (Exception occurred)",
+            "_ws.expert.severity": "8388608",
+            "_ws.expert.group": "117440512"
+          }
+        }
+      }
+    }
+  }
+]

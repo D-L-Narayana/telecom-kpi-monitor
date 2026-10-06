@@ -1,0 +1,4 @@
+[
+  { "siteId": "DEMO-001", "name": "Harbour", "lat": 17.6868, "lon": 83.2185, "region": "DEMO-East" },
+  { "siteId": "DEMO-002", "name": "Hill View", "lat": 17.7231, "lon": 83.3012, "region": "DEMO-West" }
+]

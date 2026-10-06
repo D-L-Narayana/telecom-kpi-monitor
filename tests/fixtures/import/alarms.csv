@@ -1,0 +1,4 @@
+alarmId,timestamp,clearedAt,siteId,cellId,technology,severity,probableCause,state
+ALM-D-0001,2026-09-23T06:58:12.000Z,2026-09-23T07:14:40.000Z,DEMO-002,DEMO-002-L1,LTE,Critical,Cell down,cleared
+ALM-D-0002,2026-09-23T07:40:00.000Z,,DEMO-002,DEMO-002-L1,LTE,Major,High PRB utilization,active
+ALM-D-0003,2026-09-23T05:10:30.000Z,,DEMO-001,,,Minor,"Transmission link degraded, link 2",acknowledged

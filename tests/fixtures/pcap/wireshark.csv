@@ -1,0 +1,10 @@
+"No.","Time","Source","Destination","Protocol","Length","Info"
+"1","0.000000","10.40.1.10","172.16.0.5","TCP","74","51234  >  443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM"
+"2","0.012345","172.16.0.5","10.40.1.10","TCP","74","443  >  51234 [SYN, ACK] Seq=0 Ack=1 Win=65160 Len=0 MSS=1460 SACK_PERM"
+"3","0.012900","10.40.1.10","172.16.0.5","TCP","66","51234  >  443 [ACK] Seq=1 Ack=1 Win=64256 Len=0"
+"4","0.250000","10.40.1.10","172.16.0.5","TLSv1.3","583","Client Hello (SNI=example.com)"
+"5","0.480000","10.40.1.10","172.16.0.5","TCP","583","[TCP Retransmission] 51234  >  443 [PSH, ACK] Seq=1 Ack=1 Win=64256 Len=517"
+"6","0.500000","10.40.1.10","8.8.8.8","DNS","80","Standard query 0x1a2b A example.com"
+"7","0.520000","8.8.8.8","10.40.1.10","DNS","96","Standard query response 0x1a2b A example.com A 93.184.216.34"
+"8","1.000000","10.40.1.12","172.16.0.9","SIP/SDP","812","Request: INVITE sip:+914012345678@ims.example.net |
+Content-Type: application/sdp ""v=0"""

@@ -1,0 +1,9 @@
+frame.protocols	frame.len
+eth:ethertype:ip:udp:gtp:ip:tcp	120
+eth:ethertype:ip:udp:gtp:ip:tcp	1400
+eth:ethertype:ip:udp:gtp:ip:tcp:data	600
+eth:ethertype:ip:udp:gtp:ip:udp:dns	98
+eth:ethertype:ip:sctp:s1ap	180
+eth:ethertype:ip:tcp	74
+eth:ethertype:arp	60
+eth:ethertype:ip:udp:gtp:_ws.malformed	90

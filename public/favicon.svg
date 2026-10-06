@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Telecom KPI Monitor">
+  <rect width="32" height="32" rx="6" fill="#01696f"/>
+  <rect x="5" y="19" width="4" height="8" rx="1" fill="#ffffff" opacity="0.6"/>
+  <rect x="11" y="15" width="4" height="12" rx="1" fill="#ffffff" opacity="0.75"/>
+  <rect x="17" y="10" width="4" height="17" rx="1" fill="#ffffff" opacity="0.9"/>
+  <rect x="23" y="5" width="4" height="22" rx="1" fill="#ffffff"/>
+</svg>

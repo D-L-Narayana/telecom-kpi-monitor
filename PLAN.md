@@ -129,3 +129,21 @@ tests/          vitest unit tests; e2e/ Playwright smoke tests
 - New KPI math has Vitest coverage.
 - Each page renders with the synthetic dataset and with an empty dataset.
 - README updated; Vercel preview checked on mobile width (375 px).
+
+---
+
+## 9. Status after the October 2026 upgrade
+
+This document is the original build plan and is kept for history. Milestones M0–M4 shipped as described; the M5 items that were listed in the README as "not built" (dark mode, Playwright end-to-end tests) were delivered in the October 2026 upgrade together with:
+
+- URL-synced global filters and validated deep links on every page (`#/<page>?range=…&tech=…`);
+- a **Sites** page (SVG site health map, region roll-ups, per-site table) and a **Report** page (shift handover report as Markdown / CSV / print);
+- bring-your-own data through the **Data** drawer (KPI CSV plus optional cells / sites / alarms files in the `gen:data` schema, `docs/DATA_SCHEMA.md`);
+- alarm ↔ KPI correlation, reopen, notes, bulk acknowledge and an exportable audit trail;
+- deeper packet-capture parsing (`tshark -T json`, `tshark -z io,phs`, `tshark -T fields`, Wireshark CSV with conversations);
+- threshold validation, presets and JSON import/export;
+- a sleeping-cell detection rule;
+- design tokens with light / dark / system themes, accessible dialogs, keyboard support, print and 375 px layouts;
+- ESLint, typed tests, jsdom component tests with coverage, Playwright workflows run against the production bundle with the production security headers, data-determinism and no-skipped-tests gates, GitHub Actions CI, and security headers in `vercel.json`.
+
+The synthetic dataset, its seed and the committed `data/` files are unchanged; `npm run check:data` guards that. See `README.md`, `CHANGELOG.md`, `docs/ARCHITECTURE.md` and `docs/CONTRIBUTING.md` for the current state of the project.
