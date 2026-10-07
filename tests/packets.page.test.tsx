@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { act, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { AppProvider, useApp, type AppState } from "../src/state";
 import { Packets } from "../src/pages/Packets";
 import { MAX_CAPTURE_BYTES } from "../src/lib/pcap";
@@ -152,6 +152,8 @@ describe("Packets page (loading capture exports)", () => {
     expect(screen.getByRole("status")).toHaveTextContent(/Retransmissions are not counted/);
     expect(conversationsTable()).toBeNull();
     expect(screen.getByText(/Conversations need Source\/Destination addresses/)).toBeInTheDocument();
+    // no conversations table → no scrollable region (and no tab stop) for it
+    expect(screen.queryByRole("region", { name: /top conversations/i })).toBeNull();
   });
 
   it("refuses oversized and unreadable files with an alert and keeps the current data", async () => {
@@ -194,5 +196,102 @@ describe("Packets page (imported dataset without packet statistics)", () => {
     expect(cells(sip!)[6]).toBe("–"); // a single packet has no duration, hence no rate
     await user.click(screen.getByRole("button", { name: "Remove capture" }));
     expect(screen.queryByText("This dataset has no packet statistics.")).not.toBeNull();
+  });
+});
+
+/**
+ * Both tables sit in `.table-wrap { overflow: auto }` containers. When the hierarchy table is wider than its
+ * half-width card (wide system fonts at 1280 px) the container scrolls, so it must be reachable from the keyboard
+ * (WCAG 2.1.1) and announced with a name of its own.
+ */
+describe("Packets page (keyboard access to scrollable tables)", () => {
+  const region = (name: RegExp) => screen.getByRole("region", { name });
+
+  it("both scrollable table wrappers are keyboard-focusable named regions", async () => {
+    const { user } = mount();
+    const hierarchy = region(/protocol hierarchy/i);
+    const conversations = region(/top conversations/i);
+    expect(hierarchy).toHaveAttribute("tabindex", "0");
+    expect(conversations).toHaveAttribute("tabindex", "0");
+    expect(hierarchy).toHaveClass("table-wrap");
+    expect(conversations).toHaveClass("table-wrap");
+    expect(within(hierarchy).getByRole("table", { name: "Protocol hierarchy" })).toBeInTheDocument();
+    expect(within(conversations).getByRole("table", { name: "Top conversations" })).toBeInTheDocument();
+    // the region's own name differs from the table's so assistive technology does not announce the same text twice
+    expect(hierarchy.getAttribute("aria-label")).not.toBe("Protocol hierarchy");
+    expect(conversations.getAttribute("aria-label")).not.toBe("Top conversations");
+    // Tab from the preceding control lands on the region
+    screen.getByRole("button", { name: "Hierarchy CSV" }).focus();
+    await user.tab();
+    expect(document.activeElement).toBe(hierarchy);
+    screen.getByRole("button", { name: "Conversations CSV" }).focus();
+    await user.tab();
+    expect(document.activeElement).toBe(conversations);
+  });
+
+  it("keeps the focusable regions when a capture export is loaded", async () => {
+    const { user } = mount();
+    await user.upload(loadInput(), fixtureFile("tshark.json", "application/json"));
+    await waitFor(() => expect(screen.queryByRole("heading", { name: "Protocol hierarchy · tshark.json" })).not.toBeNull());
+    const hierarchy = region(/protocol hierarchy/i);
+    expect(hierarchy).toHaveAttribute("tabindex", "0");
+    expect(within(hierarchy).getByRole("table", { name: "Protocol hierarchy" })).toBeInTheDocument();
+    const conversations = region(/top conversations/i);
+    expect(conversations).toHaveAttribute("tabindex", "0");
+    expect(within(conversations).getAllByRole("row").length).toBeGreaterThan(1);
+    screen.getByRole("button", { name: "Hierarchy CSV" }).focus();
+    await user.tab();
+    expect(document.activeElement).toBe(hierarchy);
+  });
+
+  it("adds no dead tab stop to the empty state of a dataset without packet statistics", async () => {
+    const { user, app } = mount();
+    act(() => app().loadDataset(emptyDataset, "empty.csv"));
+    expect(screen.queryByText("This dataset has no packet statistics.")).not.toBeNull();
+    expect(screen.queryAllByRole("region")).toEqual([]);
+    expect(document.querySelectorAll('[tabindex="0"]')).toHaveLength(0);
+    // once a capture is analysed the tables - and only then their regions - appear
+    await user.upload(loadInput(), fixtureFile("wireshark.csv", "text/csv"));
+    await waitFor(() => expect(screen.queryByRole("heading", { name: "Protocol hierarchy · wireshark.csv" })).not.toBeNull());
+    expect(region(/protocol hierarchy/i)).toHaveAttribute("tabindex", "0");
+    expect(region(/top conversations/i)).toHaveAttribute("tabindex", "0");
+  });
+});
+
+/**
+ * Tabbing into the bar chart opens its tooltip (Recharts accessibility layer). Recharts colours each tooltip item
+ * with the series fill, and the chart colour on the tooltip surface falls short of the 4.5:1 text contrast ratio,
+ * so the shared tooltip props must force the text token.
+ */
+describe("Packets page (keyboard-focused chart tooltip)", () => {
+  // jsdom performs no layout; give the chart container a real box so Recharts renders the SVG (KpiChart test pattern).
+  function fakeRect(this: HTMLElement): DOMRect {
+    const isChartBox = this.classList.contains("recharts-responsive-container") || this.classList.contains("recharts-wrapper");
+    const width = isChartBox ? 800 : 60;
+    const height = isChartBox ? 280 : 16;
+    return { x: 0, y: 0, top: 0, left: 0, right: width, bottom: height, width, height, toJSON: () => ({}) } as DOMRect;
+  }
+  let rectSpy: ReturnType<typeof vi.spyOn> | null = null;
+  beforeEach(() => {
+    rectSpy = vi.spyOn(HTMLElement.prototype, "getBoundingClientRect").mockImplementation(fakeRect);
+  });
+  afterEach(() => {
+    rectSpy?.mockRestore();
+    rectSpy = null;
+  });
+
+  it("renders the tooltip items in the text colour, not the series colour, when the chart is focused", () => {
+    mount();
+    const wrapper = document.querySelector<HTMLElement>(".recharts-wrapper");
+    expect(wrapper).not.toBeNull();
+    const focusable = wrapper!.matches("[tabindex]") ? wrapper! : wrapper!.querySelector<HTMLElement>("[tabindex]");
+    expect(focusable).not.toBeNull();
+    act(() => focusable!.focus());
+    const items = Array.from(document.querySelectorAll<HTMLElement>(".recharts-tooltip-item"));
+    expect(items.length).toBeGreaterThan(0);
+    for (const item of items) expect(item.style.color).toBe("var(--text)");
+    const content = document.querySelector<HTMLElement>(".recharts-default-tooltip");
+    expect(content).not.toBeNull();
+    expect(content!.style.fontSize).toBe("12px");
   });
 });

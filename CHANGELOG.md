@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Fixed
+- Charts: tooltip text (opened by hovering or by keyboard focus on a chart) is drawn in the regular text colour on the surface colour instead of in the series colour, which in the light theme fell just short of the 4.5:1 contrast minimum; the series is still named in the tooltip and the legend.
+- Drawers: the Data and Thresholds drawers slide in without fading, so their text keeps full contrast at every frame of the entry animation (the fade made automated contrast checks fail intermittently during the first 160 ms).
+- Theme switching: buttons, navigation items, KPI cards and tiles change their text and background colours instantly instead of cross-fading over 120 ms, so text never passes through low-contrast intermediate colours when the theme (or the system colour scheme) changes.
+- Packets: the protocol-hierarchy and top-conversations tables scroll horizontally when they are wider than their card (narrow windows, wider system fonts); the scrolling wrappers are now keyboard-focusable named regions, so keyboard users can reach and scroll them (WCAG 2.1.1; axe `scrollable-region-focusable`). Covered by a component test and an end-to-end keyboard/axe check at an overflowing viewport.
+
 ## [2.0.0] - 2026-10-06
 
 ### Added

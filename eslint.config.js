@@ -33,6 +33,13 @@ export default defineConfig([
     files: ["src/**/*.{ts,tsx}"],
     extends: [reactHooks.configs.flat.recommended, jsxA11y.flatConfigs.recommended],
     languageOptions: { globals: { ...globals.browser } },
+    rules: {
+      // Scrollable content regions (e.g. a wide table inside an overflow container) must be reachable from the
+      // keyboard (WCAG 2.1.1; axe rule `scrollable-region-focusable`). The documented remedy is tabindex="0" on the
+      // scroll container together with role="region" and an accessible name, so `region` joins the roles that may
+      // carry a tabindex; everything else in the recommended rule stays as is.
+      "jsx-a11y/no-noninteractive-tabindex": ["error", { tags: [], roles: ["tabpanel", "region"], allowExpressionValues: true }],
+    },
   },
   {
     name: "project/unit-tests",

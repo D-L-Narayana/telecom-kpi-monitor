@@ -277,6 +277,52 @@ test.describe("analyst workflows under the production CSP", () => {
     await expectCleanSecurity(page, security);
   });
 
+  test("WF6b packets keyboard: overflowing protocol tables are named scrollable regions reached with Tab and scrolled with the arrow keys", async ({ page }) => {
+    const security = await attachSecurityCollectors(page);
+    const geometry = (wrap: Locator) => wrap.evaluate((el) => ({ scrollWidth: el.scrollWidth, clientWidth: el.clientWidth }));
+    const scrollLeft = (el: Locator) => el.evaluate((node) => node.scrollLeft);
+    const expectOverflowing = async (wrap: Locator, label: string) => {
+      const g = await geometry(wrap);
+      expect(g.scrollWidth, `precondition: ${label} overflows (scrollWidth ${g.scrollWidth} > clientWidth ${g.clientWidth})`).toBeGreaterThan(g.clientWidth);
+    };
+    /**
+     * From the card's export button, one Tab must land on a region whose accessible name identifies the table
+     * (not merely on "some scroller": Chromium can focus bare scroll containers on its own), the arrow keys must
+     * scroll that region, and Shift+Tab must come back to the button.
+     */
+    const expectKeyboardScrollRegion = async (from: Locator, name: RegExp, label: string) => {
+      const region = page.getByRole("region", { name });
+      await from.focus();
+      await expect(from).toBeFocused();
+      await page.keyboard.press("Tab");
+      await expect(region, `${label}: Tab from the button reaches the region named ${name}`).toBeFocused();
+      await region.evaluate((el) => { el.scrollLeft = 0; });
+      for (let i = 0; i < 10; i++) await page.keyboard.press("ArrowRight");
+      await expect.poll(() => scrollLeft(region), { message: `${label}: ArrowRight scrolls the region` }).toBeGreaterThan(0);
+      await page.keyboard.press("Shift+Tab");
+      await expect(from, `${label}: Shift+Tab returns to the button`).toBeFocused();
+    };
+
+    // Two-column desktop layout: the hierarchy table is wider than its half-width card.
+    await page.setViewportSize({ width: 1000, height: 800 });
+    await open(page, "#/packets");
+    await expect(h1(page)).toHaveText("Packet statistics");
+    const hierarchy = card(page, /^Protocol hierarchy/).locator(".table-wrap");
+    await expectOverflowing(hierarchy, "protocol hierarchy table at 1000 px");
+    await expectKeyboardScrollRegion(page.getByRole("button", { name: "Hierarchy CSV" }), /protocol hierarchy/i, "hierarchy at 1000 px");
+
+    // Single-column phone layout: both tables overflow.
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.reload();
+    await expect(h1(page)).toHaveText("Packet statistics");
+    const conversations = card(page, /^Top conversations/).locator(".table-wrap");
+    await expectOverflowing(hierarchy, "protocol hierarchy table at 375 px");
+    await expectOverflowing(conversations, "top conversations table at 375 px");
+    await expectKeyboardScrollRegion(page.getByRole("button", { name: "Hierarchy CSV" }), /protocol hierarchy/i, "hierarchy at 375 px");
+    await expectKeyboardScrollRegion(page.getByRole("button", { name: "Conversations CSV" }), /top conversations/i, "conversations at 375 px");
+    await expectCleanSecurity(page, security);
+  });
+
   test("WF7 sites: map and region tiles, selecting a site, availability below 100, open alarms", async ({ page }) => {
     const security = await attachSecurityCollectors(page);
     await open(page, "#/sites?range=7d");

@@ -4,6 +4,7 @@ import { useApp } from "../state";
 import { CAPTURE_KIND_LABEL, MAX_CAPTURE_BYTES, assertCaptureSize, buildHierarchy, parseCapture, type HierarchyRow, type ParsedCapture } from "../lib/pcap";
 import { toCsv, downloadText } from "../lib/csv";
 import { Card, Empty, Notice } from "../components/ui";
+import { CHART_TOOLTIP_PROPS } from "../components/KpiChart";
 import type { Dataset } from "../lib/synthetic";
 import type { Conversation, PacketStat } from "../types/telecom";
 
@@ -207,7 +208,8 @@ export function Packets() {
                   <ul className="issue-list">{view.warnings.map((w) => <li key={w}>{w}</li>)}</ul>
                 </Notice>
               )}
-              <div className="table-wrap">
+              {/* The wrapper scrolls horizontally when the table is wider than the card, so it is a focusable, named region (WCAG 2.1.1). */}
+              <div className="table-wrap" role="region" aria-label="Protocol hierarchy table (scrollable)" tabIndex={0}>
                 <table className="table" aria-label="Protocol hierarchy">
                   <thead>
                     <tr><th>Protocol</th><th className="num">Packets</th><th className="num">% frames</th><th className="num">Bytes</th><th className="num">Avg size B</th><th className="num">Retrans.</th></tr>
@@ -238,7 +240,8 @@ export function Packets() {
                   <CartesianGrid stroke="var(--chart-grid)" horizontal={false} />
                   <XAxis type="number" fontSize={11} />
                   <YAxis type="category" dataKey="name" width={96} fontSize={11} />
-                  <Tooltip contentStyle={{ fontSize: 12 }} />
+                  {/* Shared tooltip styling: text token instead of the series colour, which lacks contrast on the tooltip surface. */}
+                  <Tooltip {...CHART_TOOLTIP_PROPS} />
                   <Bar dataKey="value" name={`Bytes (${unit})`} fill="var(--chart-series-1)" isAnimationActive={false} />
                 </BarChart>
               </ResponsiveContainer>
@@ -258,7 +261,7 @@ export function Packets() {
           {view.conversations.length === 0 ? (
             <Empty text="Conversations need Source/Destination addresses: load a Wireshark CSV export or a tshark -T json export with IP layers." />
           ) : (
-            <div className="table-wrap">
+            <div className="table-wrap" role="region" aria-label="Top conversations table (scrollable)" tabIndex={0}>
               <table className="table" aria-label="Top conversations">
                 <thead>
                   <tr><th>Address A</th><th>Address B</th><th>Protocol</th><th className="num">Packets</th><th className="num">Bytes</th><th className="num">Duration s</th><th className="num">Avg rate kbps</th></tr>

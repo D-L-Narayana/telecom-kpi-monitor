@@ -34,7 +34,7 @@ function AlarmTable({ list, cleared, link, time }: { list: Alarm[]; cleared: boo
   const shown = list.slice(0, MAX_ALARM_LINES);
   return (
     <>
-      <div className="table-wrap">
+      <div className="table-wrap" role="region" tabIndex={0} aria-label={cleared ? "Alarms cleared in window, scrollable table" : "Alarms raised in window, scrollable table"}>
         <table className="table" aria-label={cleared ? "Alarms cleared in window" : "Alarms raised in window"}>
           <thead>
             <tr><th>Alarm</th><th>Severity</th><th>Site</th><th>Cell</th><th>Cause</th><th>Raised</th><th>{cleared ? "Cleared" : "State"}</th></tr>
@@ -146,7 +146,7 @@ export function Report() {
 
       <article className="report-preview report-rich" aria-label="Report preview">
         <Card title="Window">
-          <div className="table-wrap">
+          <div className="table-wrap" role="region" tabIndex={0} aria-label="Report window, scrollable table">
             <table className="table" aria-label="Report window">
               <tbody>
                 <tr><th scope="row">Start</th><td>{at(w.start)} · {w.start}</td></tr>
@@ -161,7 +161,7 @@ export function Report() {
         </Card>
 
         <Card title="KPIs">
-          <div className="table-wrap">
+          <div className="table-wrap" role="region" tabIndex={0} aria-label="Network KPIs, scrollable table">
             <table className="table" aria-label="Network KPIs">
               <thead>
                 <tr><th>KPI</th><th className="num">Value</th><th className="num">Previous</th><th className="num">Δ %</th><th>Status</th></tr>
@@ -198,7 +198,7 @@ export function Report() {
 
         <Card title="Worst cells">
           {report.worstCells.length === 0 ? <Empty text="No cells reported samples in this window." /> : (
-            <div className="table-wrap">
+            <div className="table-wrap" role="region" tabIndex={0} aria-label="Worst cells by call drop rate, scrollable table">
               <table className="table" aria-label="Worst cells by call drop rate">
                 <thead>
                   <tr><th className="num">#</th><th>Cell</th><th>Site</th><th>Tech</th><th>Status</th><th className="num">CDR %</th><th className="num">RRC %</th><th className="num">HO %</th><th className="num">DL Mbps</th><th className="num">UL Mbps</th><th className="num">Latency ms</th><th className="num">PRB %</th><th className="num">Breaches</th><th className="num">Down intervals</th></tr>
@@ -230,7 +230,7 @@ export function Report() {
         </Card>
 
         <Card title="Alarms">
-          <div className="table-wrap">
+          <div className="table-wrap" role="region" tabIndex={0} aria-label="Alarm counts, scrollable table">
             <table className="table" aria-label="Alarm counts">
               <thead>
                 <tr><th>Alarms</th><th className="num">Count</th></tr>

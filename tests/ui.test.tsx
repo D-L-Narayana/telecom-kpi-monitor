@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { useState, type ReactNode } from "react";
 import { describe, expect, it, vi } from "vitest";
 import { render, screen, within } from "@testing-library/react";
@@ -171,6 +173,76 @@ describe("Drawer", () => {
   it("keeps the legacy .drawer-backdrop / .drawer class names", () => {
     const { container } = render(<Drawer open onClose={noop} title="Settings"><p>Body</p></Drawer>);
     expect(container.querySelector(".drawer-backdrop > .drawer[role='dialog']")).not.toBeNull();
+  });
+});
+
+describe("stylesheet: transition state keeps text contrast", () => {
+  const css = readFileSync(resolve(process.cwd(), "src/styles.css"), "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
+  /**
+   * Animating any of these blends text against its background for the duration of the transition
+   * (a theme switch cross-fades them in opposite directions). Border colours never touch text contrast.
+   * "all" and the "background" shorthand are listed because they include the colour properties.
+   */
+  const COLOUR_PROPS = new Set(["color", "background-color", "background", "opacity", "fill", "stroke", "all"]);
+  /** Innermost `selector { body }` pairs, so rules nested inside @media blocks are included. */
+  const rules = [...css.matchAll(/([^{};]+)\{([^{}]*)\}/g)].map((m) => ({ selector: m[1].trim().replace(/\s+/g, " "), body: m[2] }));
+  /** Every @keyframes block (handles the nested from/to/percentage braces). */
+  function keyframeBlocks(): { name: string; body: string }[] {
+    const blocks: { name: string; body: string }[] = [];
+    for (const m of css.matchAll(/@keyframes\s+([\w-]+)\s*\{/g)) {
+      const start = (m.index ?? 0) + m[0].length;
+      let depth = 1;
+      let i = start;
+      for (; i < css.length && depth > 0; i++) {
+        if (css[i] === "{") depth++;
+        else if (css[i] === "}") depth--;
+      }
+      blocks.push({ name: m[1], body: css.slice(start, i - 1) });
+    }
+    return blocks;
+  }
+
+  it("never transitions a colour-affecting property on any element (theme switch, hover, pressed)", () => {
+    const declarations: { selector: string; value: string }[] = [];
+    for (const rule of rules) {
+      for (const m of rule.body.matchAll(/(?:^|;)\s*transition\s*:\s*([^;]+)/g)) declarations.push({ selector: rule.selector, value: m[1].trim() });
+    }
+    expect(declarations.length, "the stylesheet is expected to declare at least one transition").toBeGreaterThan(0);
+    const offenders: string[] = [];
+    for (const d of declarations) {
+      for (const item of d.value.split(",")) {
+        const property = item.trim().split(/\s+/)[0]; // exact first token: "border-color" must not be mistaken for "color"
+        if (COLOUR_PROPS.has(property)) offenders.push(`${d.selector} → ${property}`);
+      }
+    }
+    expect(offenders, "text must keep its contrast at every frame while controls re-colour").toEqual([]);
+  });
+
+  it("never animates a colour-affecting property in a @keyframes block", () => {
+    const blocks = keyframeBlocks();
+    expect(blocks.map((b) => b.name)).toContain("drawer-in");
+    const offenders: string[] = [];
+    for (const b of blocks) {
+      for (const m of b.body.matchAll(/([a-z-]+)\s*:/g)) if (COLOUR_PROPS.has(m[1])) offenders.push(`@keyframes ${b.name} → ${m[1]}`);
+    }
+    expect(offenders).toEqual([]);
+  });
+
+  it("slides the drawer in without fading its content", () => {
+    // The keyframes block is a precondition: the slide-in stays.
+    const block = css.match(/@keyframes\s+drawer-in\s*\{([\s\S]*?)\}\s*\}/);
+    expect(block, "the drawer-in keyframes block must exist").not.toBeNull();
+    const body = block![1];
+    expect(body).toMatch(/transform\s*:/);
+    // A fade makes every label semi-transparent mid-animation, so a contrast scan that starts as soon as
+    // the dialog is visible sees blended colours. Dialog text must keep its contrast at every frame.
+    expect(body, "dialog text must keep its contrast at every animation frame").not.toMatch(/opacity\s*:/);
+  });
+
+  it("does not fade the drawer or its backdrop through a transition either", () => {
+    const drawerRules = css.match(/^\.drawer(?:-backdrop)?\s*\{[^}]*\}/gm) ?? [];
+    expect(drawerRules.length).toBeGreaterThanOrEqual(2);
+    for (const rule of drawerRules) expect(rule).not.toMatch(/opacity|transition/);
   });
 });
 

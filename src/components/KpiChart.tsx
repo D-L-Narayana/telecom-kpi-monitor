@@ -1,5 +1,17 @@
+import type { CSSProperties } from "react";
 import { Brush, CartesianGrid, Legend, Line, LineChart, ReferenceArea, ReferenceLine, ResponsiveContainer, Scatter, Tooltip, XAxis, YAxis } from "recharts";
 import { KPI_META, fmt } from "../lib/kpi";
+
+/**
+ * Tooltip styling shared by every chart. Recharts colours each tooltip row with its series stroke, which the
+ * 12 px text cannot afford on the tooltip box (the light teal series falls just short of 4.5:1 on `--surface`).
+ * The rows therefore use the text token; the series identity stays in the row name and the legend. The box
+ * background, border and label colour come from the stylesheet (`.recharts-default-tooltip`).
+ */
+export const CHART_TOOLTIP_PROPS: { contentStyle: CSSProperties; itemStyle: CSSProperties } = {
+  contentStyle: { fontSize: 12, color: "var(--text)" },
+  itemStyle: { color: "var(--text)" },
+};
 import type { KpiKey } from "../types/telecom";
 import type { Threshold } from "../lib/thresholds";
 import { classify } from "../lib/thresholds";
@@ -91,9 +103,9 @@ export function KpiChart({ kpi, points, threshold, height = 260, compareLabel, m
           <XAxis dataKey="t" type="number" domain={["dataMin", "dataMax"]} tickFormatter={(t: number) => fmtTime(t, span > 36 * 3600e3)} fontSize={11} minTickGap={40} />
           <YAxis fontSize={11} width={48} domain={["auto", "auto"]} tickFormatter={(v: number) => (Number.isInteger(v) ? String(v) : v.toFixed(meta.decimals))} />
           <Tooltip
+            {...CHART_TOOLTIP_PROPS}
             labelFormatter={(t) => fmtTime(Number(t))}
             formatter={(v: unknown, name?: unknown) => [v === null || v === undefined ? "down / no counters" : `${Number(v).toFixed(meta.decimals)} ${meta.unit}`, String(name ?? "")]}
-            contentStyle={{ fontSize: 12 }}
           />
           {compareLabel && <Legend wrapperStyle={{ fontSize: 12 }} itemSorter="dataKey" />}
           {bands && threshold && (

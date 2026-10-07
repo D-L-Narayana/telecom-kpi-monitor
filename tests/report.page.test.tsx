@@ -122,6 +122,30 @@ describe("Report page — preview", () => {
     expect(within(sectionOf("Window")).getByRole("table", { name: "Report window" })).toHaveTextContent(/Sourceempty\.csv \(imported\)/);
     expect(screen.getByText(/^Generated /)).toHaveTextContent(/empty\.csv$/);
   });
+
+  it("the preview's scrollable table wrappers are keyboard-focusable named regions", () => {
+    /** The scroll container around a preview table: reachable with Tab, named, and not echoing the table's own label. */
+    const scrollRegion = (name: RegExp): HTMLElement => {
+      const region = within(preview()).getByRole("region", { name });
+      expect(region).toHaveAttribute("tabindex", "0");
+      const table = within(region).getByRole("table");
+      expect(region.getAttribute("aria-label")).not.toBe(table.getAttribute("aria-label"));
+      return region;
+    };
+    const first = mount("#/report?range=7d&tech=All");
+    for (const name of [/report window/i, /network kpis/i, /worst cells/i, /alarm counts/i, /alarms raised in window/i, /alarms cleared in window/i]) scrollRegion(name);
+    expect(preview().querySelectorAll('[role="region"]')).toHaveLength(6);
+    first.unmount();
+
+    // without a table there is no scroll container, so no dead tab stop is left behind
+    const { app } = mount("#/report?range=24h");
+    act(() => app().loadDataset(emptyDataset, "empty.csv"));
+    for (const name of [/report window/i, /network kpis/i, /alarm counts/i]) scrollRegion(name);
+    for (const name of [/worst cells/i, /alarms raised in window/i, /alarms cleared in window/i]) {
+      expect(within(preview()).queryByRole("region", { name })).toBeNull();
+    }
+    expect(preview().querySelectorAll('[role="region"]')).toHaveLength(3);
+  });
 });
 
 describe("Report page — notes and actions", () => {

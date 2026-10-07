@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { render, screen, within } from "@testing-library/react";
-import { KpiChart, type ChartPoint } from "../src/components/KpiChart";
+import { fireEvent, render, screen, within } from "@testing-library/react";
+import { CHART_TOOLTIP_PROPS, KpiChart, type ChartPoint } from "../src/components/KpiChart";
 import { DEFAULT_THRESHOLDS } from "../src/lib/thresholds";
 import { fmtTime } from "../src/components/ui";
 
@@ -101,6 +101,31 @@ describe("KpiChart drawing", () => {
     expect(screen.getByText("Latency (RTT)", { selector: ".recharts-legend-item-text" })).toBeInTheDocument();
     expect(screen.getByText("Other", { selector: ".recharts-legend-item-text" })).toBeInTheDocument();
     // none of the previous hard-coded colours survive in the markup
+    expect(container.innerHTML).not.toMatch(/#(?:20808D|A84B2F|A13544|DA7101|7A7974|e6e4de)/i);
+  });
+
+  it("exports shared tooltip props that colour the items with the text token, never a literal colour", () => {
+    expect(CHART_TOOLTIP_PROPS.itemStyle.color).toBe("var(--text)");
+    expect(CHART_TOOLTIP_PROPS.contentStyle.fontSize).toBe(12);
+    for (const style of Object.values(CHART_TOOLTIP_PROPS)) {
+      for (const value of Object.values(style)) expect(String(value)).not.toMatch(/#[0-9a-f]{3,6}\b|rgba?\(/i);
+    }
+  });
+
+  it("shows the tooltip when the chart receives keyboard focus and draws its items in the text colour, not the series colour", () => {
+    const { container } = render(<KpiChart kpi="latencyMs" points={points} threshold={DEFAULT_THRESHOLDS.latencyMs} compareLabel="Other" />);
+    const svg = container.querySelector('.recharts-wrapper > svg.recharts-surface[role="application"]'); // the chart root, not a legend icon
+    expect(svg).not.toBeNull();
+    expect(svg).toHaveAttribute("tabindex", "0"); // Recharts accessibility layer: the chart is a tab stop
+    expect(container.querySelector(".recharts-tooltip-item")).toBeNull(); // nothing is shown before focus
+    fireEvent.focus(svg as Element); // Tab into the chart opens the tooltip on the first point
+    const items = Array.from(container.querySelectorAll<HTMLElement>("li.recharts-tooltip-item"));
+    expect(items.map((i) => i.querySelector(".recharts-tooltip-item-name")?.textContent)).toEqual(["Latency (RTT)", "Other"]);
+    expect(items.map((i) => i.querySelector(".recharts-tooltip-item-value")?.textContent)).toEqual(["10.0 ms", "12.0 ms"]);
+    // series identity stays in the item name and the legend; the text itself uses the text token on the tooltip box
+    for (const item of items) expect(item.getAttribute("style")).toMatch(/color:\s*var\(--text\)/);
+    expect(container.querySelector(".recharts-default-tooltip")?.getAttribute("style")).toMatch(/font-size:\s*12px/);
+    expect(container.querySelector(".recharts-tooltip-wrapper")).toHaveStyle({ visibility: "visible" });
     expect(container.innerHTML).not.toMatch(/#(?:20808D|A84B2F|A13544|DA7101|7A7974|e6e4de)/i);
   });
 

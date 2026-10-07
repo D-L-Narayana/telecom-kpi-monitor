@@ -47,6 +47,19 @@ Run a single test file with `npm test -- tests/kpi.test.ts`; lint a subset with 
   `<script>` will be blocked in production, and the e2e suite fails on CSP violations.
 - `vercel.json` is the single source of truth for response headers; `vite preview` serves the same headers so
   the production bundle can be checked locally exactly as deployed.
+- A `.table-wrap` (or any container with `overflow: auto`) that can become scrollable — wide tables do, depending
+  on viewport and fonts — must carry `role="region"`, `tabIndex={0}` and its own `aria-label`, distinct from the
+  inner table's label (WCAG 2.1.1; axe `scrollable-region-focusable`). `eslint.config.js` allows a tabindex on
+  `role="region"` for exactly this reason. Render the container only together with its table so no empty tab stop
+  appears.
+- Chart tooltips spread `CHART_TOOLTIP_PROPS` from `src/components/KpiChart.tsx`, which colours the tooltip text
+  with the text token. Left to its defaults, Recharts colours each row with its series colour, and the light-theme
+  series colours fall short of the 4.5:1 ratio on the tooltip surface; keyboard focus opens tooltips, so this is
+  a real reading state, not a hover nicety.
+- Entry animations may move or slide an element but must not fade its text (no `opacity` keyframes on containers
+  with text), and controls must not transition `color` or `background-color` (a theme switch would cross-fade
+  text through low-contrast states against the already re-coloured page). Only geometry and border colour may
+  animate; automated contrast scans can run while an animation is still playing, and blended text fails them.
 
 ## Tests come first
 
@@ -110,12 +123,16 @@ What the specs cover:
   Content-Security-Policy, X-Content-Type-Options, Referrer-Policy, Permissions-Policy and X-Frame-Options values
   from `vercel.json`, with the right content types.
 - `e2e/workflows.spec.ts` — the analyst workflows (shift start, KPI deep links and exports, alarm handling with
-  audit trail, thresholds, bring-your-own data, packet captures, sites, shift report, theme and a 375 px layout).
-  Each test records `securitypolicyviolation` events, console CSP refusals and requests to foreign origins, and
-  asserts that all three stay empty.
-- `e2e/a11y-axe.spec.ts` — axe-core scans of every page; zero `serious`/`critical` violations. This spec is
-  labelled separately because axe injects its own script for the scan; it does not change the application CSP,
-  and a refused injection fails the test rather than skipping it.
+  audit trail, thresholds, bring-your-own data, packet captures and keyboard-scrollable protocol tables, sites,
+  shift report, theme and a 375 px layout). Each test records `securitypolicyviolation` events, console CSP
+  refusals and requests to foreign origins, and asserts that all three stay empty.
+- `e2e/a11y-axe.spec.ts` — axe-core scans of every page; zero `serious`/`critical` violations. It also scans
+  viewports at which the Packets and Report tables genuinely overflow (the overflow is asserted as a precondition)
+  to prove that scrollable regions stay keyboard-reachable, chart tooltips opened by keyboard focus in both
+  themes, the Data drawer paused mid-way through its entry animation, and the page frozen right after a theme
+  switch in either direction (no colour transition may be in flight). This spec is labelled separately
+  because axe injects its own script for the scan; it does not change the application CSP, and a refused
+  injection fails the test rather than skipping it.
 
 ## Continuous integration
 
